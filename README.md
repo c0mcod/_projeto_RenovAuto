@@ -1,1 +1,3 @@
-Projeto proposto pelo nosso professor da disciplina de Desenv. Web, Nilltemberg Carvalho. O projeto busca representar uma locadora de automóveis fictícia, que disponibiliza algumas funções e recursos para o usuário.
+# PROJETO | RENOVAUTO
+Este projeto é um trabalho proposto pelo nosso professor de Desenv. Web, Nilltemberg Carvalho.
+O projeto tem a proposta de representar uma locadora de veículos fictícia com funções e recursos variados com o intuito de tratar o usuário da melhor forma possível.

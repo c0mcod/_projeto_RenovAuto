@@ -1,0 +1,191 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----- Configuração de scroll suave ----- */
+html {
+    scroll-behavior: smooth;
+}
+/* ----- Configuração de Corpo ----- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+/* ----- Confuguração de Cabeçalho ----- */
+header {
+    background: #f7f7f7;
+    text-align: center;
+}
+/* -----Configuração da Navbar -----*/
+nav {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    margin: 5px auto 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+nav li {
+    margin: 0 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 2px;
+    font-size: 9pt;
+}
+
+nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* -----Fim da configuração da navbar -----*/
+
+/* ----- Início da Seção de destaque ----- */
+
+.hero {
+    background: #4CAF50;
+    color: white;
+    padding: 100px 20px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}
+/* ----- Fim da seção de destaque ----- */
+
+/* Início da seção "Sobre" */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#about {
+    background: #9dd89f;
+    padding: 50px;
+    margin: 0px 20px 0 20px;
+    border-radius: 10px;
+}
+
+/* ----- Fim da seção "Sobre" */
+
+/* ----- Rodapé ----- */
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Configuração da Classe de Planos */
+#pricing h2 {
+    margin-left: -10px ;
+}
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.plan {
+    background-color: #4CAF50;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    padding-inline: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.plan1 {
+    margin-right: 10px;
+
+}
+
+/* Fim da Configuração da Classe de Planos */
+
+/* ---------------------Responsividade----------------------*/
+
+/* ----- Configurações de Medias Queries*/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+    }
+}

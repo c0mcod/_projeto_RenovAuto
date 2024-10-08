@@ -1,0 +1,1 @@
+Projeto proposto pelo nosso professor da disciplina de Desenv. Web, Nilltemberg Carvalho. O projeto busca representar uma locadora de automóveis fictícia, que disponibiliza algumas funções e recursos para o usuário.

@@ -16,19 +16,62 @@ header {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
+    
 }
 
 header h1 {
-    font-size: 2.5em;
+    margin-top: 5px;
+    font-size: 15pt;
     font-weight: bold;
+    margin-left: 10px;
+}
+/* Configuração da Nav Bar */
+nav {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* nav {
+    display: flex;
+    justify-content: space-between;
+} */
 header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 12pt;
 }
 
 /* Seção principal */
@@ -55,18 +98,20 @@ header nav a {
     max-width: 600px;
 }
 
-.hero a {
+.hero button {
     background-color: #00c43f;
     color: #fff;
     padding: 15px 30px;
     font-size: 1.2em;
     border-radius: 30px;
+    border: none;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.hero a:hover {
+.hero button:hover {
     background-color: #00a334;
+    cursor: pointer;
 }
 
 /* Seção de serviços */

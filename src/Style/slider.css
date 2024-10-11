@@ -33,3 +33,28 @@
     border: 3px solid #fff;
     padding: 4px;
 }
+
+.card-list .card-item .car-descr {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .alugar {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color:  #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .alugar:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff
+}

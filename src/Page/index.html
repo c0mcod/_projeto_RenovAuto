@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RenovAuto - Aluguel de carros feito para você.">
     <title>RenovAuto - Aluguel Automotivo</title>
+    <!-- CSS DA HOME -->
     <link rel="stylesheet" href="../Style/home.css">
+    <!-- CSS DO SLIDER -->
     <link rel="stylesheet" href="../Style/slider.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/_favicon_renovauto.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
+    <!-- CABEÇALHO -->
     <header>
         <nav>
             <div id="icon">
@@ -35,129 +41,108 @@
         <button type="button"><b>Alugue Agora</b></button>
     </section>
 
-    <!-- Slider -->
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-1.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 1</h2>
-                        <p class="car-descr">HB20 1.6</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
+    <!-- SOBRE A RENOVAUTO -->
+    <section id="about">
+        <h3>Sobre a RenovAuto</h3>
+        <div id="texto-about">
+            <p>A RenovAuto é uma empresa inovadora no setor de locação de veículos, focada em oferecer soluções
+                acessíveis e
+                práticas para todos os tipos de clientes. Com um compromisso de excelência, nossa missão é tornar a
+                experiência de alugar um carro simples, segura e eficiente, desde a navegação em nosso ambiente virtual
+                até
+                a entrega do veículo.</p>
+            <p>Nossa plataforma online foi desenvolvida para ser intuitiva, garantindo uma navegação rápida e clara, com
+                ferramentas que facilitam a busca pelos serviços certos. Estamos sempre buscando aprimorar nossa
+                comunicação
+                com os clientes, tornando o processo mais acessível e moderno.</p>
+            <p>Com uma grande variedade de veículos e serviços de locação personalizados, a RenovAuto se destaca pela
+                sua
+                abordagem transparente, além de oferecer suporte técnico especializado disponível 24 horas por dia</p>
         </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-2.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 2</h2>
-                        <p class="car-descr">Prisma 1.6</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-3.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 3</h2>
-                        <p class="car-descr">Onix 1.4</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-4.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 4</h2>
-                        <p class="car-descr">Logan 1.0</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-5.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 5</h2>
-                        <p class="car-descr">Azera 2.0</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
-                        <img src="../Images/img-6.jpg" alt="user-image" class="user-image">
-                        <h2 class="user-name">Carro 6</h2>
-                        <p class="car-descr">Elantra 2.0</p>
-                        <button class="alugar">Alugar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="image-about"> <img src="/taaft.jpg" alt="Logo da RenovAuto gerada por IA"></div>
     </section>
 
     <!-- Seção de Serviços -->
     <section class="services">
         <h3>Nossos Serviços</h3>
-        <div class="service-item">
+        <div class="service-item swiper-slide">
             <h4>Locação de Veículos</h4>
             <p>Aluguel de carros para viagens, trabalho e lazer. Diversidade de modelos disponíveis.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item swiper-slide">
             <h4>Gestão de Frotas</h4>
             <p>Soluções para empresas que precisam gerenciar sua frota de veículos com eficiência.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item swiper-slide">
             <h4>Suporte 24h</h4>
             <p>Atendimento de emergência disponível 24 horas por dia, 7 dias por semana.</p>
         </div>
     </section>
 
-    <!-- Seção de conteúdos -->
+    <!-- Seção de Planos -->
     <section class="content">
         <div class="content-services" id="fcontent">
             <h2>Mais praticidade para seus funcionários!</h2>
             <p>Oferecemos planos para empresas que precisam enviar colaboradores à viajens de negócios!</p>
-            <a href="">Clique e confira!</a>
-            <div class="img">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet mollitia consectetur maiores corporis doloremque ipsum esse blanditiis sunt, iure minus quo quam repellat fugiat. Perferendis officiis nobis facilis nesciunt eius.</div>
+            <button type="button" class="btn-plan">Clique e confira!</button>
             <!-- Acrescentar alguma função -->
         </div>
         <div class="content-services">
             <h2>Mais conforto para suas viajens em família!</h2>
             <p>Conheça os veiculos mais agradáveis para viagens longas em família!</p>
-            <div class="img">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet mollitia consectetur maiores corporis doloremque ipsum esse blanditiis sunt, iure minus quo quam repellat fugiat. Perferendis officiis nobis facilis nesciunt eius.</div>
+            <button type="button" class="btn-plan">Clique e confira!</button>
             <!-- Acrescentar alguma função -->
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <section id="products">
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <h2 class="user-name">Fiat Mobi</h2>
+                        <p class="car-descr">HB20 1.6</p>
+                        <img src="../Images/Cars/MOBI.png" alt="user-image" class="user-image">
+                        <button class="alugar">Alugar</button>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <h2 class="user-name">Carro 2</h2>
+                        <p class="car-descr">Logan 1.0</p>
+                        <img src="../Images/Cars/ARGO.png" alt="user-image" class="user-image">
+                        <button class="alugar">Alugar</button>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <h2 class="user-name">Carro 3</h2>
+                        <p class="car-descr">Prisma 1.6</p>
+                        <img src="../Images/Cars/CROA.png" alt="user-image" class="user-image">
+                        <button class="alugar">Alugar</button>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <h2 class="user-name">Carro 4</h2>
+                        <p class="car-descr">Onix 1.6</p>
+                        <img src="../Images/Cars/Prisma-removebg-preview.png" alt="user-image" class="user-image">
+                        <button class="alugar">Alugar</button>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <h2 class="user-name">Carro 5</h2>
+                        <p class="car-descr">Renegade 1.6</p>
+                        <img src="../Images/Cars/T-Cross-removebg-preview.png" alt="user-image" class="user-image">
+                        <button class="alugar">Alugar</button>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -184,6 +169,9 @@
         <p>&copy; 2024 RenovAuto. Todos os direitos reservados.</p>
         <p><a href="#">Política de Privacidade</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/slider.js"></script>
 
 </body>
 

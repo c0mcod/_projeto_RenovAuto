@@ -4,15 +4,21 @@
     box-sizing: border-box;
 }
 
+.slider-wrapper {
+    margin-top: 80px;
+    max-width: 1400px;
+    margin: 70px 55px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url(../Images/bg.jpg);
+    min-height: 40vh;
 }
 .card-list .card-item {
-    color: #fff;
+    color: #333;
+    user-select: none;
     width: 400px;
     padding: 35px;
     display: flex;
@@ -21,22 +27,24 @@
     flex-direction: column;
     border-radius: 8px;
     backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+
 .card-list .card-item .user-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto;
     margin-bottom: 40px;
-    border: 3px solid #fff;
     padding: 4px;
 }
 
 .card-list .card-item .car-descr {
     font-size: 1.15rem;
-    color: #e3e3e3;
+    color: #333e2c;
     font-weight: 500;
     margin: 14px 0 40px;
 }
@@ -44,17 +52,42 @@
 .card-list .card-item .alugar {
     font-size: 1.25rem;
     padding: 10px 35px;
-    color:  #030728;
+    color: #fff;
     border-radius: 6px;
     font-weight: 500;
     cursor: pointer;
-    background: #fff;
-    border: 1px solid transparent;
+    background: #00a334;
+    border: 2px solid transparent;
     transition: 0.2s ease;
 }
 
 .card-list .card-item .alugar:hover {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #fff;
-    color: #fff
+    border: 2px solid #00a380;
+    color: #111
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #333;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: #333;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+@media (max-width: 768px){
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+    .slider-wrapper .swiper-slide-button {
+        display: none;
+    }
 }

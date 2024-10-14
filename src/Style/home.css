@@ -9,7 +9,7 @@
 }
 
 p {
-    font-family: "inter";
+    font-family: "Inter";
 }
 
 body {
@@ -36,11 +36,15 @@ body {
 }
 
 @keyframes typing {
-    from { width: 0 }
+    from {
+        width: 0
+    }
 }
 
 @keyframes blink {
-    50% { border-color: transparent }
+    50% {
+        border-color: transparent
+    }
 }
 
 header {
@@ -144,6 +148,31 @@ header nav a {
     cursor: pointer;
 }
 
+/* Seção about */
+#about h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#texto-about {
+    padding: 5px;
+    margin-left: 50px;
+    width: 500px;
+    background-color: #333;
+    border-radius: 6px;
+}
+
+#texto-about p {
+    text-align: justify;
+    color: #fff;
+    font-family: "Inter";
+    padding: 10px;
+}
+
+
 /* Seção de serviços */
 .services {
     padding: 50px 20px;
@@ -184,6 +213,7 @@ header nav a {
 #fcontent {
     margin-bottom: 20px;
 }
+
 /* Seção de conteúdos */
 .content {
     display: flex;
@@ -193,22 +223,30 @@ header nav a {
     text-align: center;
 }
 
-.content a {
-    text-decoration: none;
-    font-size: 14pt;
-}
-.content::after a{
-    color: red;
+.content button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #00a334;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
 }
 
-.img {
+.content button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00a380;
+    color: #111
+}
+
+#bus {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 600px;
-    padding: 60px;
-    background-color: #666;
+    width: 1000px;
 }
+
 /* Seção de feedback */
 .feedback-box {
     padding-top: 50px;
@@ -219,10 +257,11 @@ header nav a {
     display: flex;
     justify-content: space-around;
 }
+
 .box-user {
     display: flex;
     border-radius: 5px;
-    
+
     padding: 20px;
     margin: 20px;
     height: 400px;

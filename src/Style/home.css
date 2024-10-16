@@ -197,13 +197,27 @@ header nav a {
     text-align: center;
 }
 
+#title-plans {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
 .container-content {
     width: 500px;
     height: 300px;
     padding: 20px;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
-    border: 3px solid #00a334;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+}
+
+.text-plans {
+    margin-left: 90px;
+    padding: 20px;
+    width: 290px;
+    text-align: left;
 }
 
 .content button {
@@ -265,7 +279,7 @@ footer a {
     text-decoration: none;
 }
 
-/* media queries */
+/* Media Queries */
 @media (max-width: 768px) {
     header nav a {
         font-size: 9pt;

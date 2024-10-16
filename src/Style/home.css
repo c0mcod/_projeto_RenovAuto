@@ -148,31 +148,6 @@ header nav a {
     cursor: pointer;
 }
 
-/* Seção about */
-#about h3 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    text-align: center;
-    padding-top: 20px;
-}
-
-#texto-about {
-    padding: 5px;
-    margin-left: 50px;
-    width: 500px;
-    background-color: #333;
-    border-radius: 6px;
-}
-
-#texto-about p {
-    text-align: justify;
-    color: #fff;
-    font-family: "Inter";
-    padding: 10px;
-}
-
-
 /* Seção de serviços */
 .services {
     padding: 50px 20px;
@@ -189,6 +164,7 @@ header nav a {
     display: inline-block;
     width: 300px;
     padding: 20px;
+    border-radius: 6px;
     margin: 10px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -217,10 +193,17 @@ header nav a {
 /* Seção de conteúdos */
 .content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     text-align: center;
+}
+
+.container-content {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    border: 3px solid #00a334;
+    border-radius: 6px;
 }
 
 .content button {
@@ -239,12 +222,6 @@ header nav a {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #00a380;
     color: #111
-}
-
-#bus {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
 }
 
 /* Seção de feedback */
@@ -286,4 +263,88 @@ footer p {
 footer a {
     color: #00c43f;
     text-decoration: none;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    header nav a {
+        font-size: 9pt;
+    }
+
+    /* Ajuste do header */
+    header h1 {
+        font-size: 12pt;
+        margin-left: 5px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Serviços e feedback se ajustam verticalmente */
+    .services, .feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .service-item {
+        width: 90%;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .box-user {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .services h3 {
+        font-size: 2em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .container-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajuste de feedback */
+    .feedback {
+        flex-direction: column;
+    }
+
+    .box-user {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    /* Ajuste no rodapé */
+    footer p {
+        font-size: 0.9em;
+    }
 }

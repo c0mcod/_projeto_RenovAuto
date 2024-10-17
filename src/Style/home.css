@@ -47,6 +47,7 @@ body {
     }
 }
 
+/* Configuração da Nav Bar */
 header {
     background-color: #000;
     color: #fff;
@@ -61,7 +62,6 @@ header h1 {
     margin-left: 10px;
 }
 
-/* Configuração da Nav Bar */
 nav {
     padding: 5px;
     border-radius: 10px;
@@ -305,7 +305,8 @@ footer a {
     }
 
     /* Serviços e feedback se ajustam verticalmente */
-    .services, .feedback {
+    .services,
+    .feedback {
         display: flex;
         flex-direction: column;
         align-items: center;

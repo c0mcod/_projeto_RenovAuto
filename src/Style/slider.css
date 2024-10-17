@@ -27,7 +27,7 @@
 .card-list .card-item {
     color: #333;
     user-select: none;
-    width: 400px;
+    width: 200px;
     padding: 35px;
     display: flex;
     align-items: center;

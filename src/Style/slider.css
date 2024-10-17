@@ -13,7 +13,7 @@
 
 .slider-wrapper {
     margin-top: 80px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 70px 55px;
     border-radius: 6px;
 }
@@ -24,13 +24,53 @@
     align-items: center;
     min-height: 40vh;
 }
+
+/* Ajustes gerais para o slider */
 .card-list .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    justify-content: space-between;
+    width: 250px; /* Ajuste o tamanho do card conforme necessário */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-list .card-item .car-descr {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333e2c;
+    font-weight: 500;
+}
+
+.card-list .card-item .descrip ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-list .card-item .descrip ul li {
+    margin-bottom: 5px;
+}
+
+.card-list .card-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* .card-list .card-item {
     color: #333;
     user-select: none;
     width: 200px;
     padding: 35px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 8px;
@@ -39,7 +79,6 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
-
 
 .card-list .card-item .user-image {
     max-width:300px;
@@ -55,9 +94,16 @@
     color: #333e2c;
     font-weight: 500;
     margin: 14px 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-list .card-item .alugar {
+.descrip {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* .card-list .card-item .alugar {
     font-size: 1.25rem;
     padding: 10px 35px;
     color: #fff;
@@ -73,7 +119,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #00a380;
     color: #111
-}
+} */
 
 .slider-wrapper .swiper-pagination-bullet {
     background: #333;
@@ -91,11 +137,33 @@
     color: #4658ff;
 }
 
+
+
 @media (max-width: 768px){
     .slider-wrapper {
         margin: 0 10px 40px;
     }
     .slider-wrapper .swiper-slide-button {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-list .card-item {
+        width: 180px; /* Ajusta o tamanho dos cards para telas menores se for o caso */
+    }
+
+    .card-list .card-item .user-image {
+        width: 120px;
+    }
+
+    .card-list .card-item h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper .swiper-slide {
+        width: 200px; /* Ajuste para telas menores */
     }
 }

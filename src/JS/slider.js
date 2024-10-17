@@ -20,15 +20,15 @@ const swiper = new Swiper('.slider-wrapper', {
 
     breakpoints: {
         0: {
-            slidePerView: 1
+            slidesPerView: 1
         },
 
         620: {
-            slidePerView: 2
+            slidesPerView: 2
 
         },
         1024: {
-            slidePerView: 3
+            slidesPerView: 3
         }
     }
 });

@@ -132,7 +132,7 @@ header nav a {
     max-width: 600px;
 }
 
-.hero button {
+.hero .hero-btn {
     background-color: #00c43f;
     color: #fff;
     padding: 15px 30px;
@@ -144,7 +144,7 @@ header nav a {
 }
 
 .hero button:hover {
-    background-color: #00a334;
+    background-color: #04832c;
     cursor: pointer;
 }
 

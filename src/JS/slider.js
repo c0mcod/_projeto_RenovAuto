@@ -32,3 +32,23 @@ const swiper = new Swiper('.slider-wrapper', {
         }
     }
 });
+
+// Seleciona todos os botões "Mostrar Detalhes" e "Voltar"
+const showDetailButtons = document.querySelectorAll('.show-details-btn');
+const hideDetailButtons = document.querySelectorAll('.hide-details-btn');
+
+// Adiciona o evento de clique no botão "Mostrar Detalhes"
+showDetailButtons.forEach((button) => {
+    button.addEventListener('click', function() {
+        const card = this.closest('.card-item');
+        card.classList.add('flipped');
+    });
+});
+
+// Adiciona o evento de clique no botão "Voltar"
+hideDetailButtons.forEach((button) => {
+    button.addEventListener('click', function() {
+        const card = this.closest('.card-item');
+        card.classList.remove('flipped');
+    });
+});

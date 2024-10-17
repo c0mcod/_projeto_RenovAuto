@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../Images/_favicon_renovauto.ico" type="image/x-icon">
+    <!-- LIBRARY JS SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -38,11 +40,11 @@
         </div>
         <p>Na RenovAuto, oferecemos os melhores veículos para aluguel com rapidez, segurança e praticidade. Encontre o
             carro ideal para sua viagem ou trabalho em poucos cliques.</p>
-        <button type="button"><b>Alugue Agora</b></button>
+        <button type="button" class="hero-btn"><b>Alugue Agora</b></button>
     </section>
 
     <!-- Seção de Serviços -->
-    <section class="services">
+    <section class="services effect-srvc">
         <h3>Nossos Serviços</h3>
         <div class="service-item swiper-slide">
             <h4>Locação de Veículos</h4>
@@ -84,7 +86,139 @@
     </section>
 
     <!-- Slider -->
-    <section id="products">
+<section id="products">
+    <h3>Principais veículos</h3>
+    <div class="container swiper">
+        <div class="slider-wrapper">
+
+            <div class="card-list swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="card-item swiper-slide">
+                    <div class="card-inner">
+                        <!-- Frente do card -->
+                        <div class="card-front">
+                            <h2 class="user-name">Fiat Mobi</h2>
+                            <img src="../Images/Cars/MOBI.png" alt="user-image" class="user-image">
+                            <div class="descrip">
+                                <ul class="car-descr">
+                                    <li>Modelo: <span>Fiat Mobi</span></li>
+                                    <li>Cor: <span>Cinza</span></li>
+                                </ul>
+                            </div>
+                            <button class="show-details-btn">Mostrar Detalhes</button>
+                        </div>
+                        <!-- Verso do card -->
+                        <div class="card-back">
+                            <h2>Detalhes do Fiat Mobi</h2>
+                            <p>Mais informações do veículo...</p>
+                            <button class="hide-details-btn">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-item swiper-slide">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2 class="user-name">Fiat Argo</h2>
+                            <img src="../Images/Cars/ARGO.png" alt="user-image" class="user-image">
+                            <div class="descrip">
+                                <ul class="car-descr">
+                                    <li>Modelo: <span>Fiat Argo</span></li>
+                                    <li>Cor: <span>Vermelho</span></li>
+                                </ul>
+                            </div>
+                            <button class="show-details-btn">Mostrar Detalhes</button>
+                        </div>
+                        <div class="card-back">
+                            <h2>Detalhes do Fiat Argo</h2>
+                            <p>Mais informações do veículo...</p>
+                            <button class="hide-details-btn">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-item swiper-slide">
+                    <div class="card-inner">
+                        <!-- Frente do card -->
+                        <div class="card-front">
+                            <h2 class="user-name">Chevrolet Onix</h2>
+                            <img src="../Images/Cars/CROA.png" alt="user-image" class="user-image">
+                            <div class="descrip">
+                                <ul class="car-descr">
+                                    <li>Modelo: <span>Chevrolet Onix</span></li>
+                                    <li>Cor: <span>Cinza</span></li>
+                                </ul>
+                            </div>
+                            <button class="show-details-btn">Mostrar Detalhes</button>
+                        </div>
+                        <!-- Verso do card -->
+                        <div class="card-back">
+                            <h2>Detalhes do Chevrolet Onix</h2>
+                            <p>Mais informações do veículo...</p>
+                            <button class="hide-details-btn">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card-item swiper-slide">
+                    <div class="card-inner">
+                        <!-- Frente do card -->
+                        <div class="card-front">
+                            <h2 class="user-name">Chevrolet Prisma</h2>
+                            <img src="../Images/Cars/Prisma-removebg-preview.png" alt="user-image" class="user-image">
+                            <div class="descrip">
+                                <ul class="car-descr">
+                                    <li>Modelo: <span>Chevrolet Prisma</span></li>
+                                    <li>Cor: <span>Cinza</span></li>
+                                </ul>
+                            </div>
+                            <button class="show-details-btn">Mostrar Detalhes</button>
+                        </div>
+                        <!-- Verso do card -->
+                        <div class="card-back">
+                            <h2>Detalhes do Chevrolet Prisma</h2>
+                            <p>Mais informações do veículo...</p>
+                            <button class="hide-details-btn">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card-item swiper-slide">
+                    <div class="card-inner">
+                        <!-- Frente do card -->
+                        <div class="card-front">
+                            <h2 class="user-name">Volkswagen T-Cross</h2>
+                            <img src="../Images/Cars/T-Cross-removebg-preview.png" alt="user-image" class="user-image">
+                            <div class="descrip">
+                                <ul class="car-descr">
+                                    <li>Modelo: <span>Volkswagen T-Cross</span></li>
+                                    <li>Cor: <span>Cinza</span></li>
+                                </ul>
+                            </div>
+                            <button class="show-details-btn">Mostrar Detalhes</button>
+                        </div>
+                        <!-- Verso do card -->
+                        <div class="card-back">
+                            <h2>Detalhes do Volkswagen T-Cross</h2>
+                            <p>Mais informações do veículo...</p>
+                            <button class="hide-details-btn">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- <section id="products">
         <h3>Principais veiculos</h3>
         <div class="container swiper">
             <div class="slider-wrapper">
@@ -102,31 +236,28 @@
                     </div>
 
                     <div class="card-item swiper-slide">
-                        <h2 class="user-name">Carro 2</h2>
-                        <p class="car-descr">Logan 1.0</p>
+                        <h2 class="user-name">Fiat Argo</h2>
                         <img src="../Images/Cars/ARGO.png" alt="user-image" class="user-image">
-                        <!-- <button class="alugar">Alugar</button> -->
+                        <p class="car-descr">Logan 1.0</p>
+                        
                     </div>
 
                     <div class="card-item swiper-slide">
-                        <h2 class="user-name">Carro 3</h2>
-                        <p class="car-descr">Prisma 1.6</p>
+                        <h2 class="user-name">Chevrolet Onix</h2>
                         <img src="../Images/Cars/CROA.png" alt="user-image" class="user-image">
-                        <!-- <button class="alugar">Alugar</button> -->
+                        <p class="car-descr">Prisma 1.6</p>
                     </div>
 
                     <div class="card-item swiper-slide">
-                        <h2 class="user-name">Carro 4</h2>
-                        <p class="car-descr">Onix 1.6</p>
+                        <h2 class="user-name">Chevrolet Prisma</h2>
                         <img src="../Images/Cars/Prisma-removebg-preview.png" alt="user-image" class="user-image">
-                        <!-- <button class="alugar">Alugar</button> -->
+                        <p class="car-descr">Onix 1.6</p>
                     </div>
 
                     <div class="card-item swiper-slide">
-                        <h2 class="user-name">Carro 5</h2>
-                        <p class="car-descr">Renegade 1.6</p>
+                        <h2 class="user-name">Volkswagen T-Cross</h2>
                         <img src="../Images/Cars/T-Cross-removebg-preview.png" alt="user-image" class="user-image">
-                        <!-- <button class="alugar">Alugar</button> -->
+                        <p class="car-descr">Renegade 1.6</p>
                     </div>
                 </div>
 
@@ -138,7 +269,7 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Seção de Feedback -->
     <section class="feedback-box">
@@ -166,6 +297,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../JS/slider.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 

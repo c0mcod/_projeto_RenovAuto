@@ -20,7 +20,14 @@ body {
 }
 
 /* Configuração do ScrollReaver */
-.services, .content-services1, .content-services2, .title-plans, .effect-reveal-1, .effect-reveal-2, .effect-reveal-3, .feedback-title{
+.services,
+.content-services1,
+.content-services2,
+.title-plans,
+.effect-reveal-1,
+.effect-reveal-2,
+.effect-reveal-3,
+.feedback-title {
     visibility: hidden;
 }
 
@@ -151,66 +158,6 @@ nav .effect-underline {
     }
 }
 
-/* header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-
-}
-
-header h1 {
-    margin-top: 5px;
-    font-size: 15pt;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-nav {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-nav .effect-underline {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-
-    display: inline-block;
-    padding: 8px;
-    position: relative;
-}
-
-.effect-underline:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.effect-underline:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-
-header nav .effect-underline {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 10pt;
-} */
-
 /* Seção principal */
 .hero {
     background-color: #111;
@@ -258,7 +205,7 @@ header nav .effect-underline {
 
 /* Seção de serviços */
 .services {
-    padding: 50px 20px;
+    padding: 100px;
     text-align: center;
 }
 
@@ -300,6 +247,10 @@ header nav .effect-underline {
 
 /* Seção de conteúdos */
 .content {
+    padding: 50px;
+}
+
+.box-plans {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -347,11 +298,10 @@ header nav .effect-underline {
 }
 
 /* Seção de feedback */
-#feedback-section {
+.feedback-section {
     overflow: hidden;
     background-color: #f0f0f0;
     padding: 80px;
-    margin-top: -50px;
     white-space: nowrap;
 }
 
@@ -362,7 +312,8 @@ header nav .effect-underline {
 
 .feedback-container {
     display: inline-block;
-    animation: scrollHorizontal 40s linear infinite; /* Duração da animação ajustável */
+    animation: scrollHorizontal 40s linear infinite;
+    /* Duração da animação ajustável */
 }
 
 .feedback-card {
@@ -377,7 +328,8 @@ header nav .effect-underline {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    overflow: hidden; /* Evitar que o conteúdo saia do card */
+    overflow: hidden;
+    /* Evitar que o conteúdo saia do card */
 }
 
 .txt-feedback {
@@ -385,9 +337,12 @@ header nav .effect-underline {
     line-height: 1.5;
     color: #555;
     margin-top: 10px;
-    word-wrap: break-word; /* Quebra palavras longas se necessário */
-    white-space: normal; /* Permite a quebra de linhas */
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    word-wrap: break-word;
+    /* Quebra palavras longas se necessário */
+    white-space: normal;
+    /* Permite a quebra de linhas */
+    height: auto;
+    /* Permite que a altura se ajuste ao conteúdo */
 }
 
 .pfp-user {
@@ -401,36 +356,15 @@ header nav .effect-underline {
 /* Animação de scroll horizontal suave */
 @keyframes scrollHorizontal {
     0% {
-        transform: translateX(0); /* Começar visível */
+        transform: translateX(0);
+        /* Começar visível */
     }
+
     100% {
-        transform: translateX(-100%); /* Deslocar todo o container para fora da tela */
+        transform: translateX(-100%);
+        /* Deslocar todo o container para fora da tela */
     }
 }
-
-
-/* .feedback-box {
-    padding-top: 50px;
-    text-align: center;
-}
-
-.feedback {
-    display: flex;
-    justify-content: space-around;
-}
-
-.box-user {
-    display: flex;
-    border-radius: 5px;
-
-    padding: 20px;
-    margin: 20px;
-    height: 400px;
-    border: #000 0.5px solid;
-    background-color: #666;
-    opacity: 0.5;
-    color: #000;
-} */
 
 /* Footer */
 footer {

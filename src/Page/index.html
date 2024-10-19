@@ -31,8 +31,10 @@
             </div>
             <div id="group" class="nav-links">
                 <a href="../Page/index.html" class="effect-underline text-reset">Início</a>
-                <a href="#" class="effect-underline text-reset">Serviços</a>
-                <a href="#" class="effect-underline text-reset">Contato</a>
+                <a href="#servicos" class="effect-underline text-reset">Serviços</a>
+                <a href="#planos" class="effect-underline text-reset">Planos</a>
+                <a href="#carros" class="effect-underline text-reset">Mais procurados</a>
+                <a href="#feedbacks" class="effect-underline text-reset">feedback</a>
             </div>
             <button class="hamburger-menu" id="hamburger-menu">
                 &#9776;
@@ -67,7 +69,7 @@
     </section>
 
     <!-- Seção de Serviços -->
-    <section class="services">
+    <section class="services" id="servicos">
         <h3 class="title-plans">Nossos Serviços</h3>
         <div class="service-item swiper-slide effect-reveal-1">
             <h4>Locação de Veículos</h4>
@@ -84,32 +86,34 @@
     </section>
 
     <!-- Seção de Planos -->
-    <h3 class="title-plans">Planos de Aluguel</h3>
-    <section class="content">
-        <div class="container-content">
-            <div class="content-services1" id="fcontent">
-                <h2>Mais praticidade para seus funcionários!</h2>
-                <div class="text-plans">
-                    <p>Inserir vantagens para empresas</p>
+    <section class="content" id="planos">
+        <h3 class="title-plans">Planos de Aluguel</h3>
+        <div class="box-plans">
+            <div class="container-content">
+                <div class="content-services1" id="fcontent">
+                    <h2>Mais praticidade para seus funcionários!</h2>
+                    <div class="text-plans">
+                        <p>Inserir vantagens para empresas</p>
+                    </div>
+                    <button type="button" class="btn-plan">Clique e confira!</button>
                 </div>
-                <button type="button" class="btn-plan">Clique e confira!</button>
+                <!-- Acrescentar alguma função -->
             </div>
-            <!-- Acrescentar alguma função -->
-        </div>
-        <div class="container-content">
-            <div class="content-services2">
-                <h2>Mais conforto para suas viajens em família!</h2>
-                <div class="text-plans">
-                    <p>Inserir vantagens para para quem precisa do uso para viagem</p>
+            <div class="container-content">
+                <div class="content-services2">
+                    <h2>Mais conforto para suas viajens em família!</h2>
+                    <div class="text-plans">
+                        <p>Inserir vantagens para para quem precisa do uso para viagem</p>
+                    </div>
+                    <button type="button" class="btn-plan">Clique e confira!</button>
                 </div>
-                <button type="button" class="btn-plan">Clique e confira!</button>
+                <!-- Acrescentar alguma função -->
             </div>
-            <!-- Acrescentar alguma função -->
         </div>
     </section>
 
     <!-- Slider -->
-    <section id="products">
+    <section class="products" id="carros">
         <h3 class="title-plans">Principais veículos</h3>
         <div class="container swiper">
             <div class="slider-wrapper">
@@ -244,7 +248,7 @@
     </section>
 
     <!-- Seção de Feedback -->
-    <section id="feedback-section">
+    <section class="feedback-section" id="feedbacks">
         <h2 class="feedback-title">O que os nossos clientes dizem sobre nós?</h2>
         <div class="feedback-container">
 
@@ -268,7 +272,8 @@
 
             <div class="feedback-card">
                 <div class="pfp-user"></div>
-                <div class="txt-feedback">A RenovAuto tornou o processo de aluguel muito simples! O atendimento foi ótimo e o carro estava impecável</div>
+                <div class="txt-feedback">A RenovAuto tornou o processo de aluguel muito simples! O atendimento foi
+                    ótimo e o carro estava impecável</div>
             </div>
 
             <div class="feedback-card">
@@ -291,9 +296,11 @@
         <p><a href="#">Política de Privacidade</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../JS/slider.js"></script>
-    <script src="../JS/home.js"></script>
+    <div id="scripts">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../JS/slider.js"></script>
+        <script src="../JS/home.js"></script>
+    </div>
 </body>
 
 </html>

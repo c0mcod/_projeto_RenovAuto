@@ -1,4 +1,3 @@
-/* NAV BAR */
 
 * {
     margin: 0;
@@ -23,7 +22,107 @@ body {
     line-height: 1.6;
 }
 
+/* NAV BAR */
+
+/* Configuração da Nav Bar */
+
+/* Estilos padrões para desktop */
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
 header h1 {
+    margin-top: 5px;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .effect-underline {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.effect-underline:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.effect-underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Esconde o ícone no desktop */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav .effect-underline {
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+        color: white;
+    }
+
+    .effect-underline:after {
+        background: none;
+    }
+
+    .effect-underline:hover:after {
+        width: 0;
+    }
+}
+/* header h1 {
     margin-top: 5px;
     font-size: 15pt;
     font-weight: bold;
@@ -73,7 +172,7 @@ header nav a {
     margin: 0 15px;
     text-decoration: none;
     font-size: 10pt;
-}
+} */
 
 /* FIM DA SEÇÃO DE NAV BAR */
 

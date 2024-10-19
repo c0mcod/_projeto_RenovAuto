@@ -6,3 +6,14 @@ const navLinks = document.querySelector('.nav-links');
 hamburgerMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
+// Feedback
+const feedbackContainer = document.querySelector('.feedback-container');
+const feedbackCards = document.querySelectorAll('.feedback-card');
+
+// Clonar os feedbacks para criar o efeito contínuo
+feedbackCards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    feedbackContainer.appendChild(clone);
+});
+

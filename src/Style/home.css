@@ -9,7 +9,7 @@
 }
 
 p {
-    font-family: "Inter";
+    font-family: "Segoe UI";
 }
 
 body {
@@ -17,6 +17,11 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
+}
+
+/* Configuração do ScrollReaver */
+.services, .content-services1, .content-services2, .title-plans, .effect-reveal-1, .effect-reveal-2, .effect-reveal-3, .feedback-title{
+    visibility: hidden;
 }
 
 /* Efeito TypeWriter */
@@ -50,6 +55,7 @@ body {
 /* Configuração da Nav Bar */
 
 /* Estilos padrões para desktop */
+
 header {
     background-color: #000;
     color: #fff;
@@ -75,9 +81,9 @@ nav .effect-underline {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.10em;
     display: inline-block;
-    padding: 8px;
+    padding: 8px 20px;
     position: relative;
 }
 
@@ -269,7 +275,7 @@ header nav .effect-underline {
     border-radius: 6px;
     margin: 10px;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -299,7 +305,7 @@ header nav .effect-underline {
     text-align: center;
 }
 
-#title-plans {
+.title-plans {
     font-size: 2em;
     margin-bottom: 30px;
     color: #333;
@@ -341,7 +347,69 @@ header nav .effect-underline {
 }
 
 /* Seção de feedback */
-.feedback-box {
+#feedback-section {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 80px;
+    margin-top: -50px;
+    white-space: nowrap;
+}
+
+.feedback-title {
+    text-align: center;
+    padding: 60px;
+}
+
+.feedback-container {
+    display: inline-block;
+    animation: scrollHorizontal 40s linear infinite; /* Duração da animação ajustável */
+}
+
+.feedback-card {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden; /* Evitar que o conteúdo saia do card */
+}
+
+.txt-feedback {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 10px;
+    word-wrap: break-word; /* Quebra palavras longas se necessário */
+    white-space: normal; /* Permite a quebra de linhas */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+}
+
+.pfp-user {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+/* Animação de scroll horizontal suave */
+@keyframes scrollHorizontal {
+    0% {
+        transform: translateX(0); /* Começar visível */
+    }
+    100% {
+        transform: translateX(-100%); /* Deslocar todo o container para fora da tela */
+    }
+}
+
+
+/* .feedback-box {
     padding-top: 50px;
     text-align: center;
 }
@@ -362,7 +430,7 @@ header nav .effect-underline {
     background-color: #666;
     opacity: 0.5;
     color: #000;
-}
+} */
 
 /* Footer */
 footer {

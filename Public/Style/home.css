@@ -211,7 +211,62 @@ nav .effect-underline {
 }
 
 /* Seção de conteúdos */
+
+/* Seção de conteúdos */
 .content {
+    padding: 50px;
+}
+
+.box-plans {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; /* Para ajustar a disposição em telas menores */
+}
+
+.title-plans {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.container-content {
+    width: 100%;
+    max-width: 500px; /* Limita a largura em telas maiores */
+    height: auto; /* Deixa a altura fluida */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaçamento entre os containers */
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.text-plans {
+    margin-left: 0;
+    padding: 20px;
+    text-align: left;
+}
+
+.content button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #00a334;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.content button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00a380;
+    color: #111;
+}
+
+/* .content {
     padding: 50px;
 }
 
@@ -260,7 +315,7 @@ nav .effect-underline {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #00a380;
     color: #111
-}
+} */
 
 /* Seção de feedback */
 .feedback-section {
@@ -430,6 +485,40 @@ footer a {
     /* Ajuste no rodapé */
     footer p {
         font-size: 0.9em;
+    }
+}
+
+/* Media Query para a seção de planos*/
+@media (max-width: 768px) {
+    .box-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-content {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .title-plans {
+        font-size: 1.5em;
+    }
+
+    .content button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Ajuste adicional para telas menores que 480px */
+@media (max-width: 480px) {
+    .title-plans {
+        font-size: 1.25em;
+    }
+
+    .content button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }
 

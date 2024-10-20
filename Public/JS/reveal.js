@@ -1,5 +1,25 @@
 window.revelar = ScrollReveal({ reset: true });
 
+// Hero
+revelar.reveal('.text',
+    {
+        duration: 2000,
+        distance: '120px',
+        origin: 'left'
+    })
+revelar.reveal('#text-hero',
+    {
+        duration: 2000,
+        distance: '120px',
+    })
+    revelar.reveal('.hero-btn',
+        {
+            duration: 2000,
+            distance: '120px',
+            delay: 500,
+            origin: 'bottom'
+        })
+
 // serviços
 revelar.reveal('.effect-reveal-1',
     {

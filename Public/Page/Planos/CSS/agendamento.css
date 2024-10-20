@@ -186,7 +186,7 @@ header nav a {
 }
 
 .container-cars-section {
-    max-width: 75%;
+    max-width: 90%;
     margin: 0 auto;
 
     padding: 0;
@@ -233,9 +233,9 @@ header nav a {
 }
 
 .card-inner img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-    max-height: 100px;
+    max-height: 90px;
     object-fit: contain;
     margin: auto 0;
 }

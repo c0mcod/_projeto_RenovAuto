@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RenovAuto - Aluguel de carros feito para você.">
     <title>RenovAuto - Agendamento</title>
-    <!-- CSS DA HOME -->
-    <link rel="stylesheet" href="/Public/Page/Planos/CSS/agendamento.css">
+    <!-- CSS DE AGENDAMENTO -->
+    <link rel="stylesheet" href="../Page/Planos/CSS/agendamento.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/Public/Images/_favicon_renovauto.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Images/_favicon_renovauto.png" type="image/x-icon">
     <!-- LIBRARY JS SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- BOOTSTRAP -->
@@ -25,8 +25,6 @@
             </div>
             <div id="group" class="nav-links">
                 <a href="/index.html" class="effect-underline text-reset">Início</a>
-                <a href="#" class="effect-underline text-reset">Serviços</a>
-                <a href="#" class="effect-underline text-reset">Contato</a>
             </div>
             <button class="hamburger-menu" id="hamburger-menu">
                 &#9776;
@@ -39,16 +37,18 @@
         <h3>Veículos Disponíveis</h3>
         <div class="container-cars-section">
             <div class="card-grid">
+
                 <div class="card-item">
                     <div class="card-inner">
+
                         <div class="card-front">
                             <h2 class="vehicle-name">Fiat Mobi</h2>
                             <img src="../Images/Cars/MOBI.png" alt="Fiat Mobi" class="vehicle-image">
                             <div class="button-container">
                                 <button class="show-details-btn show-details">Mostrar Detalhes</button>
+                                <!-- <button class="alugar-btn">Alugar</button> -->
                                 <button class="alugar-btn">Alugar</button>
                             </div>
-                            <!-- <button class="show-details">Mostrar Detalhes</button> -->
                         </div>
                         <div class="card-back">
                             <h2>Detalhes</h2>
@@ -140,7 +140,6 @@
                                 <button class="show-details-btn show-details">Mostrar Detalhes</button>
                                 <button class="alugar-btn">Alugar</button>
                             </div>
-                            <!-- <button class="show-details">Mostrar Detalhes</button> -->
                         </div>
                         <div class="card-back">
                             <h2>Detalhes</h2>
@@ -153,8 +152,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -165,6 +162,27 @@
     </footer>
 
     <script src="../JS/agendamento.js"></script>
+
+    <script>
+        document.querySelectorAll('.alugar-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const carroNome = this.getAttribute('data-carro');
+                const carroPreco = this.getAttribute('data-preco');
+
+                document.getElementById('carro-nome').textContent = carroNome;
+                document.getElementById('carro-preco').textContent = carroPreco;
+
+
+                document.getElementById('form-aluguel').style.display = 'block';
+            });
+        });
+
+
+        document.getElementById('fechar-form').addEventListener('click', function () {
+            document.getElementById('form-aluguel').style.display = 'none';
+        });
+
+    </script>
 </body>
 
 </html>

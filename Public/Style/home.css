@@ -2,6 +2,9 @@
 /* Importando Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,20 +34,24 @@ body {
     visibility: hidden;
 }
 
+
+
 /* Efeito TypeWriter */
-#typewriter {
+/* #typewriter {
     display: grid;
     place-items: center;
+    padding: 20px;
 }
 
 .text {
     width: 100%;
-    animation: typing 2.5s steps(23), blink .5s step-end infinite alternate;
+    animation: typing 3.5s steps(23), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 @keyframes typing {
@@ -57,7 +64,7 @@ body {
     50% {
         border-color: transparent
     }
-}
+} */
 
 /* Configuração da Nav Bar */
 
@@ -510,7 +517,7 @@ footer a {
     }
 }
 
-/* Ajuste adicional para telas menores que 480px */
+/* Ajuste para telas menores na title e nos botões */
 @media (max-width: 480px) {
     .title-plans {
         font-size: 1.25em;
@@ -522,39 +529,34 @@ footer a {
     }
 }
 
-/* Estilos para dispositivos móveis */
-/* @media (max-width: 768px) {
-    nav .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #000;
-        width: 100%;
-        text-align: center;
+
+/* @media (max-width: 1024px) {
+    .text {
+        font-size: 1.2em;
+    }
+    
+    #typewriter {
+        padding: 10px; 
     }
 
-    nav .nav-links.active {
-        display: flex;
+    .hero-btn {
+        font-size: 1rem; 
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+    
+    .hero-btn {
+        font-size: 0.875rem;
+        padding: 6px 12px;
     }
 
-    .hamburger-menu {
-        display: block;
-    }
-
-    nav .effect-underline {
-        padding: 10px 0;
-        border-bottom: 1px solid #333;
-        color: white;
-    }
-
-    .effect-underline:after {
-        background: none;
-    }
-
-    .effect-underline:hover:after {
-        width: 0;
+    p {
+        font-size: 0.9em; 
     }
 } */
-

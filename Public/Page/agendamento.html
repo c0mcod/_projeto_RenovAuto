@@ -47,7 +47,7 @@
                             <div class="button-container">
                                 <button class="show-details-btn show-details">Mostrar Detalhes</button>
                                 <!-- <button class="alugar-btn">Alugar</button> -->
-                                <button class="alugar-btn">Alugar</button>
+                                <button class="alugar-btn" data-carro="Fiat Mobi" data-preco="100">Alugar</button>
                             </div>
                         </div>
                         <div class="card-back">
@@ -59,6 +59,7 @@
                             </ul>
                             <button class="hide-details">Voltar</button>
                         </div>
+
                     </div>
                 </div>
 
@@ -69,7 +70,7 @@
                             <img src="../Images/Cars/ARGO.png" alt="Fiat Argo" class="vehicle-image">
                             <div class="button-container">
                                 <button class="show-details-btn show-details">Mostrar Detalhes</button>
-                                <button class="alugar-btn">Alugar</button>
+                                <button class="alugar-btn" data-carro="Fiat Argo" data-preco="120"">Alugar</button>
                             </div>
                             <!-- <button class="show-details">Mostrar Detalhes</button> -->
                         </div>
@@ -154,6 +155,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal para Aluguel -->
+        <div id="modal-aluguel" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Alugar <span id="carro-nome-modal"></span></h2>
+                <p>Preço: R$<span id="carro-preco-modal"></span> por dia</p>
+                <form>
+                    <label for="dias">Número de dias:</label>
+                    <input type="number" id="dias" name="dias" min="1" value="1">
+                    <button type="submit" class="btn-submit" >Confirmar Aluguel</button>
+                </form>
+            </div>
+        </div>
+
     </section>
 
     <footer>
@@ -162,27 +178,6 @@
     </footer>
 
     <script src="../JS/agendamento.js"></script>
-
-    <script>
-        document.querySelectorAll('.alugar-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const carroNome = this.getAttribute('data-carro');
-                const carroPreco = this.getAttribute('data-preco');
-
-                document.getElementById('carro-nome').textContent = carroNome;
-                document.getElementById('carro-preco').textContent = carroPreco;
-
-
-                document.getElementById('form-aluguel').style.display = 'block';
-            });
-        });
-
-
-        document.getElementById('fechar-form').addEventListener('click', function () {
-            document.getElementById('form-aluguel').style.display = 'none';
-        });
-
-    </script>
 </body>
 
 </html>

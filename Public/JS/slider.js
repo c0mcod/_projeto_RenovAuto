@@ -39,7 +39,7 @@ const hideDetailButtons = document.querySelectorAll('.hide-details-btn');
 
 // Adiciona o evento de clique no botão "Mostrar Detalhes"
 showDetailButtons.forEach((button) => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const card = this.closest('.card-item');
         card.classList.add('flipped');
     });
@@ -47,8 +47,9 @@ showDetailButtons.forEach((button) => {
 
 // Adiciona o evento de clique no botão "Voltar"
 hideDetailButtons.forEach((button) => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const card = this.closest('.card-item');
         card.classList.remove('flipped');
     });
 });
+

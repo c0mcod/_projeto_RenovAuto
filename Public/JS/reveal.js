@@ -5,18 +5,19 @@ revelar.reveal('.text',
     {
         duration: 2000,
         distance: '120px',
-        origin: 'left'
+        origin: 'top'
     })
 revelar.reveal('#text-hero',
     {
         duration: 2000,
-        distance: '120px',
+        delay: 300,
+        distance: '120px'
     })
     revelar.reveal('.hero-btn',
         {
             duration: 2000,
             distance: '120px',
-            delay: 500,
+            delay: 400,
             origin: 'bottom'
         })
 
@@ -60,11 +61,6 @@ revelar.reveal('.content-services2',
 
     })
 revelar.reveal('.title-plans',
-    {
-        duration: 2000,
-        distance: '120px'
-    })
-revelar.reveal('.feedback-title',
     {
         duration: 2000,
         distance: '120px'

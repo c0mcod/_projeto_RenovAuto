@@ -2,9 +2,10 @@
 /* Importando Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -33,40 +34,6 @@ body {
 .feedback-title {
     visibility: hidden;
 }
-
-
-
-/* Efeito TypeWriter */
-/* #typewriter {
-    display: grid;
-    place-items: center;
-    padding: 20px;
-}
-
-.text {
-    width: 100%;
-    animation: typing 3.5s steps(23), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-} */
-
-/* Configuração da Nav Bar */
 
 /* Estilos padrões para desktop */
 
@@ -132,15 +99,37 @@ nav .effect-underline {
 
 /* Seção principal */
 .hero {
-    background-color: #111;
-    color: #fff;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+    height: 100vh;
+    background-image: url('https://mobilidade.estadao.com.br/wp-content/uploads/2020/12/Aluguel-de-carro-Frota-Localiza5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero h2 {
@@ -226,9 +215,9 @@ nav .effect-underline {
 
 .box-plans {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
-    flex-wrap: wrap; /* Para ajustar a disposição em telas menores */
+    flex-wrap: wrap;
 }
 
 .title-plans {
@@ -240,10 +229,10 @@ nav .effect-underline {
 
 .container-content {
     width: 100%;
-    max-width: 500px; /* Limita a largura em telas maiores */
-    height: auto; /* Deixa a altura fluida */
+    max-width: 500px;
+    height: auto;
     padding: 20px;
-    margin-bottom: 20px; /* Espaçamento entre os containers */
+    margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
@@ -273,74 +262,17 @@ nav .effect-underline {
     color: #111;
 }
 
-/* .content {
-    padding: 50px;
-}
-
-.box-plans {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.title-plans {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #333;
-    text-align: center;
-}
-
-.container-content {
-    width: 500px;
-    height: 300px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-}
-
-.text-plans {
-    margin-left: 90px;
-    padding: 20px;
-    width: 290px;
-    text-align: left;
-}
-
-.content button {
-    font-size: 1.25rem;
-    padding: 10px 35px;
-    color: #fff;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    background: #00a334;
-    border: 2px solid transparent;
-    transition: 0.2s ease;
-}
-
-.content button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #00a380;
-    color: #111
-} */
-
 /* Seção de feedback */
 .feedback-section {
+    padding: 80px 40px;
     overflow: hidden;
     background-color: #f0f0f0;
-    padding: 80px;
     white-space: nowrap;
-}
-
-.feedback-title {
-    text-align: center;
-    padding: 60px;
 }
 
 .feedback-container {
     display: inline-block;
     animation: scrollHorizontal 40s linear infinite;
-    /* Duração da animação ajustável */
 }
 
 .feedback-card {
@@ -356,7 +288,6 @@ nav .effect-underline {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     overflow: hidden;
-    /* Evitar que o conteúdo saia do card */
 }
 
 .txt-feedback {
@@ -365,11 +296,8 @@ nav .effect-underline {
     color: #555;
     margin-top: 10px;
     word-wrap: break-word;
-    /* Quebra palavras longas se necessário */
     white-space: normal;
-    /* Permite a quebra de linhas */
     height: auto;
-    /* Permite que a altura se ajuste ao conteúdo */
 }
 
 .pfp-user {
@@ -384,12 +312,10 @@ nav .effect-underline {
 @keyframes scrollHorizontal {
     0% {
         transform: translateX(0);
-        /* Começar visível */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Deslocar todo o container para fora da tela */
     }
 }
 
@@ -410,13 +336,38 @@ footer a {
     text-decoration: none;
 }
 
+.title-plans {
+    font-size: 2rem;
+    /* Tamanho inicial para telas grandes */
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Media queries para ajustar a responsividade em telas menores */
+@media (max-width: 768px) {
+    .title-plans {
+        font-size: 1.5rem;
+        /* Reduz o tamanho da fonte em tablets */
+        padding: 0 20px;
+        /* Adiciona padding lateral para espaçamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .title-plans {
+        font-size: 1.2rem;
+        /* Reduz o tamanho da fonte em smartphones */
+        padding: 0 10px;
+    }
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     header nav a {
         font-size: 9pt;
     }
 
-    /* Ajuste do header */
     header h1 {
         font-size: 12pt;
         margin-left: 5px;
@@ -435,8 +386,7 @@ footer a {
         font-size: 1em;
     }
 
-    /* Serviços e feedback se ajustam verticalmente */
-    .services,
+    .services-section,
     .feedback {
         display: flex;
         flex-direction: column;
@@ -447,7 +397,7 @@ footer a {
         width: 90%;
     }
 
-    .feedback {
+    .feedback-section {
         flex-direction: column;
     }
 
@@ -480,7 +430,7 @@ footer a {
     }
 
     /* Ajuste de feedback */
-    .feedback {
+    .feedback-section {
         flex-direction: column;
     }
 
@@ -528,35 +478,3 @@ footer a {
         padding: 8px 15px;
     }
 }
-
-
-/* @media (max-width: 1024px) {
-    .text {
-        font-size: 1.2em;
-    }
-    
-    #typewriter {
-        padding: 10px; 
-    }
-
-    .hero-btn {
-        font-size: 1rem; 
-        padding: 8px 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .text {
-        font-size: 1em;
-        flex-wrap: wrap;
-    }
-    
-    .hero-btn {
-        font-size: 0.875rem;
-        padding: 6px 12px;
-    }
-
-    p {
-        font-size: 0.9em; 
-    }
-} */

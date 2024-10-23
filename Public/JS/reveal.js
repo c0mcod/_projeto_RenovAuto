@@ -65,3 +65,12 @@ revelar.reveal('.title-plans',
         duration: 2000,
         distance: '120px'
     })
+
+revelar.reveal('.img-plan',
+    {
+        duration: 2000,
+        distance: '120px',
+        origin:"left"
+    })
+
+

@@ -1,0 +1,300 @@
+/* GERAL */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Segoe UI";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.title-plans {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.beneficios, .service-item {
+    visibility: hidden;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-top: 5px;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .effect-underline {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.effect-underline:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.effect-underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.hamburger-menu {
+    /* Esconder o ícone no desktop */
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* SEÇÃO DA HERO */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    background-color: #111;
+}
+
+.container-plan-E {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-plan {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#hero-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-plan-E {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#text-plan-E {
+    margin: 20px 0;
+    color: #f8f9fa;
+    font-size: 1.2rem;
+}
+
+.hero-plan-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.hero-plan-btn:hover {
+    background-color: #0056b3;
+}
+
+.beneficios {
+    padding: 100px;
+    text-align: center;
+}
+
+.beneficios h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.beneficios .service-item {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.beneficios .service-item:hover {
+    transform: scale(1.05);
+}
+
+.beneficios h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.beneficios p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Estilos gerais da seção */
+.contact-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos do formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #00c43f;
+    text-decoration: none;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .container-plan-E {
+        flex-direction: column;
+    }
+
+    .img-plan {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #hero-content {
+        padding: 20px;
+    }
+
+    .text-plan-E {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

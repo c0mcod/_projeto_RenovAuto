@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-top: -50px ;
 }
 
 .products h3 {
     font-size: 2em;
-    margin-bottom: 30px;
     color: #333;
     text-align: center;
 }

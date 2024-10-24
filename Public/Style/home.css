@@ -1,7 +1,7 @@
-/* Estilos globais */
 /* Importando Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Estilos globais */
 html {
     scroll-behavior: smooth;
 }
@@ -35,8 +35,7 @@ body {
     visibility: hidden;
 }
 
-/* Estilos padrões para desktop */
-
+/* Configuraões principais */
 header {
     background-color: #000;
     color: #fff;
@@ -338,26 +337,21 @@ footer a {
 
 .title-plans {
     font-size: 2rem;
-    /* Tamanho inicial para telas grandes */
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #333;
 }
 
-/* Media queries para ajustar a responsividade em telas menores */
 @media (max-width: 768px) {
     .title-plans {
-        font-size: 1.5rem;
-        /* Reduz o tamanho da fonte em tablets */
+        font-size: 1.5rem !important;
         padding: 0 20px;
-        /* Adiciona padding lateral para espaçamento */
     }
 }
 
 @media (max-width: 480px) {
     .title-plans {
         font-size: 1.2rem;
-        /* Reduz o tamanho da fonte em smartphones */
         padding: 0 10px;
     }
 }

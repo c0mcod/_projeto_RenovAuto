@@ -10,14 +10,14 @@ revelar.reveal('.text',
 revelar.reveal('#text-hero',
     {
         duration: 2000,
-        delay: 300,
+        delay: 200,
         distance: '120px'
     })
     revelar.reveal('.hero-btn',
         {
             duration: 2000,
             distance: '120px',
-            delay: 400,
+            delay: 300,
             origin: 'bottom'
         })
 
@@ -26,7 +26,8 @@ revelar.reveal('.effect-reveal-1',
     {
         duration: 2000,
         distance: '120px',
-        delay: 500
+        delay: 400,
+        origin: "bottom"
     })
 
 
@@ -34,7 +35,8 @@ revelar.reveal('.effect-reveal-2',
     {
         duration: 2000,
         distance: '120px',
-        delay: 1000
+        delay: 900,
+        origin: "bottom"
     })
 
 
@@ -42,7 +44,8 @@ revelar.reveal('.effect-reveal-3',
     {
         duration: 2000,
         distance: '120px',
-        delay: 1500
+        delay: 1500,
+        origin: "bottom"
     })
 
 // planos 

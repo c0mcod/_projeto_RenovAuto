@@ -24,7 +24,6 @@ body {
 }
 
 /* Configuração do ScrollReaver */
-/* .services, */
 .content-services1,
 .content-services2,
 .title-plans,
@@ -44,7 +43,7 @@ body {
     .effect-reveal-2,
     .effect-reveal-3,
     .feedback-title {
-        visibility: visible; /* Alterando para visible em telas menores */
+        visibility: visible;
     }
 }
 
@@ -150,7 +149,7 @@ nav .effect-underline {
 }
 
 
-/* Seção principal */
+/* SEÇÃO PRINCIPAL(HERO) */
 .hero {
     display: flex;
     flex-direction: column;
@@ -239,12 +238,12 @@ nav .effect-underline {
     overflow: hidden;
     transition: transform 0.3s;
     margin: 15px;
-    width: 500px;
+    width: 390px;
 }
 
 .service-card img {
     width: 100%;
-    height: 200px;
+    height: 190px;
     object-fit: cover;
 }
 
@@ -255,76 +254,8 @@ nav .effect-underline {
 .text-services {
     padding: 20px;
 }
-
-.service-link {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background-color: #00c43f;
-    color: white;
-    text-decoration: none;
-    border-radius: 0 0 10px 10px;
-}
-
-.service-link:hover {
-    background-color: #009f3f; /* Cor mais escura */
-    color: #fff; /* Mantém o texto branco */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .service-box {
-        justify-content: center; /* Centraliza os cartões em telas menores */
-    }
-
-    .service-card {
-        width: 90%; /* Ajusta a largura para ocupar 90% da tela */
-        margin: 10px 0; /* Margem vertical reduzida */
-    }
-}
-
-@media (max-width: 480px) {
-    .services-title {
-        font-size: 2em; /* Reduz o tamanho do título */
-    }
-
-    .service-card img {
-        height: 150px; /* Reduz a altura da imagem em telas menores */
-    }
-}
-
-/* .services-title {
-    text-align: center;
-    padding: 5%;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-.service-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
-}
-
-.text-services {
-    padding: 20px;
-}
-.service-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.service-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.service-card:hover {
-    transform: scale(1.05);
+.text-services p, h3{
+    font-size: 1em;
 }
 
 .service-link {
@@ -340,8 +271,29 @@ nav .effect-underline {
 .service-link:hover {
     background-color: #009f3f;
     color: #fff;
-} */
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .service-box {
+        justify-content: center;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 2em;
+    }
+
+    .service-card img {
+        height: 150px;
+    }
+}
 
 /* SEÇÃO DE PLANOS */
 .rental-plans {
@@ -411,33 +363,83 @@ nav .effect-underline {
 /* Responsividade */
 @media (max-width: 768px) {
     .plan-container {
-        flex-direction: column; /* Empilha os cartões em telas menores */
-        align-items: center; /* Centraliza os cartões */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .plan-card {
-        width: 90%; /* Largura total em telas menores */
-        margin: 10px 0; /* Margem reduzida entre os cartões */
+        width: 90%;
+        margin: 10px 0; 
     }
 }
 
 @media (max-width: 480px) {
     .plans-title {
-        font-size: 2em; /* Reduz o tamanho do título */
+        font-size: 2em;
     }
 
     .plan-price {
-        font-size: 1.2em; /* Reduz o tamanho do preço */
+        font-size: 1.2em;
     }
 
     .btn-select {
-        padding: 8px 16px; /* Ajusta o padding do botão */
+        padding: 8px 16px;
     }
 }
 
 
 /* SEÇÃO DE FEEDBACK */
 .feedback-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+}
+
+.feedback-text p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.feedback-photo img {
+    border-radius: 50%;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.stars {
+    margin-top: 10px;
+    color: #00c43f;
+}
+
+@media (max-width: 768px) {
+    .feedback-card {
+        width: 100%; /* Faz os cards ocuparem toda a largura disponível em telas menores */
+        max-width: 300px; /* Limita a largura máxima dos cards */
+    }
+}
+
+/* .feedback-section {
     padding: 80px 40px;
     overflow: hidden;
     background-color: #f0f0f0;
@@ -480,10 +482,10 @@ nav .effect-underline {
     background-color: #ccc;
     border-radius: 50%;
     margin: 0 auto 10px auto;
-}
+} */
 
 /* Animação de scroll horizontal suave */
-@keyframes scrollHorizontal {
+/* @keyframes scrollHorizontal {
     0% {
         transform: translateX(0);
     }
@@ -491,7 +493,7 @@ nav .effect-underline {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 /* SEÇÃO ABOUT US */
 .about-us {
     padding: 50px 20px;
@@ -550,6 +552,7 @@ footer a {
     padding: 10px 15px;
     cursor: pointer;
     display: none;
+    z-index: 1000;
 }
 .scroll-to-top:hover {
     background-color: black;

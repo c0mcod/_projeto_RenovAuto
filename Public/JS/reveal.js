@@ -1,3 +1,5 @@
+// Funções JS da biblioteca Scroll Reveal
+
 window.revelar = ScrollReveal({ reset: true });
 
 // Hero

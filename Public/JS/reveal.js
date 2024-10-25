@@ -75,31 +75,3 @@ revelar.reveal('.img-plan',
         distance: '100px',
         origin: "left"
     })
-
-// ScrollReveal().reveal('.effect-reveal-1', { delay: 200 });
-// ScrollReveal().reveal('.effect-reveal-2', { delay: 400 });
-// ScrollReveal().reveal('.effect-reveal-3', { delay: 600 });
-
-
-
-// Função para desativar ScrollReveal em resoluções menores
-function handleScrollReveal() {
-    if (window.innerWidth < 768) {
-        // Desativar Scroll Reveal removendo a classe associada ao efeito
-        ScrollReveal().clean('.effect-reveal-1');
-        ScrollReveal().clean('.effect-reveal-2');
-        ScrollReveal().clean('.effect-reveal-3');
-    } else {
-        // Reativar os efeitos de ScrollReveal em resoluções maiores
-        ScrollReveal().reveal('.effect-reveal-1', { delay: 200 });
-        ScrollReveal().reveal('.effect-reveal-2', { delay: 400 });
-        ScrollReveal().reveal('.effect-reveal-3', { delay: 600 });
-    }
-}
-
-// Verificar quando a página é carregada e quando a janela é redimensionada
-window.addEventListener('load', handleScrollReveal);
-window.addEventListener('resize', handleScrollReveal);
-
-
-

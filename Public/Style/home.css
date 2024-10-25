@@ -109,6 +109,11 @@ nav .effect-underline {
 
     nav .nav-links.active {
         display: flex;
+        z-index: 10;
+    }
+
+    nav .nav-links {
+        transition: all 0.3s ease;
     }
 
     .hamburger-menu {
@@ -239,6 +244,17 @@ nav .effect-underline {
 #fcontent {
     margin-bottom: 20px;
 }
+.services .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .services .service-item {
+        width: 100%;
+    }
+}
+
 
 /* Seção de conteúdos */
 

@@ -92,12 +92,15 @@ nav .effect-underline {
 }
 
 /* SEÇÃO DA HERO */
+
+/* SEÇÃO DA HERO */
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: stretch;
     height: 100vh;
     background-color: #111;
+    position: relative;
 }
 
 .container-plan-E {
@@ -106,6 +109,7 @@ nav .effect-underline {
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1; /* Coloca o conteúdo na frente */
 }
 
 .img-plan {
@@ -149,6 +153,48 @@ nav .effect-underline {
 
 .hero-plan-btn:hover {
     background-color: #0056b3;
+}
+
+/* Media query para resoluções menores */
+@media (max-width: 768px) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        background-image: url('/Public/Images/empresario-de-sucesso.webp');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(17, 17, 17, 0.7); /* Cor escura com opacidade */
+        z-index: 0; /* Certifica-se de que o overlay fica atrás do conteúdo */
+    }
+
+    .container-plan-E {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Coloca o conteúdo na frente */
+    }
+
+    .img-plan {
+        display: none; /* Esconde a imagem como elemento separado */
+    }
+
+    #hero-content {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 /* Beneficios */

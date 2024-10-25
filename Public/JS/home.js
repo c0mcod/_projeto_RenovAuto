@@ -1,10 +1,11 @@
 // Menu hamburguer
 const hamburgerMenu = document.getElementById('hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+        const navLinks = document.querySelector('.nav-links');
 
-hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+        hamburgerMenu.addEventListener('click', () => {
+            console.log('Menu hamburguer clicado');
+            navLinks.classList.toggle('active');
+        });
 
 // Feedback
 const feedbackContainer = document.querySelector('.feedback-container');

@@ -24,10 +24,6 @@ body {
 
 /* NAV BAR */
 
-/* Configuração da Nav Bar */
-
-/* Estilos padrões para desktop */
-
 header {
     background-color: #000;
     color: #fff;
@@ -79,7 +75,6 @@ nav .effect-underline {
 
 .hamburger-menu {
     display: none;
-    /* Esconde o ícone no desktop */
     background: none;
     border: none;
     font-size: 30px;
@@ -122,59 +117,6 @@ nav .effect-underline {
         width: 0;
     }
 }
-/* header h1 {
-    margin-top: 5px;
-    font-size: 15pt;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-nav {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-nav a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-
-    display: inline-block;
-    padding: 8px;
-    position: relative;
-}
-
-a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 10pt;
-} */
-
-/* FIM DA SEÇÃO DE NAV BAR */
 
 /* CARDS DE CARROS */
 #vehicle-list h3 {
@@ -221,7 +163,6 @@ header nav a {
     transform-style: preserve-3d;
     position: relative;
     perspective: 1000px;
-
     margin: 0;
     padding: 0px;
 }
@@ -313,12 +254,6 @@ header nav a {
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
-    .card-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
 /* Modal (janela pop-up) */
 .modal {
     display: none;
@@ -336,17 +271,18 @@ header nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
     padding: 20px;
     width: 700px !important;
     height: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .close {
-    color: #aaa;
+    color: #ff6347;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -354,24 +290,48 @@ header nav a {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #d9534f;
     cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    border-color: #0056b3;
+    outline: none;
 }
 
 .btn-submit {
     background-color: #0056b3;
     border: none;
     color: white;
-    padding: 10px;
+    padding: 12px 20px;
     border-radius: 5px;
-    transition: 0.2s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #0056b3;
     color: #111;
+    transform: translateY(-2px);
 }
-
 
 /* SEÇÃO DE RODAPÉ */
 footer {
@@ -390,4 +350,10 @@ footer a {
     text-decoration: none;
 }
 
-/* FIM DA SEÇÃO DE RODAPÉ */
+/* media queries */
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

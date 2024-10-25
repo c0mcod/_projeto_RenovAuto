@@ -108,7 +108,7 @@ nav .effect-underline {
     height: 100vh;
     position: relative;
     height: 100vh;
-    background-image: url('https://mobilidade.estadao.com.br/wp-content/uploads/2020/12/Aluguel-de-carro-Frota-Localiza5.jpg');
+    background-image: url('https://mobilidade.estadao.com.br/wp-content/uploads/2020/12/Aluguel-de-carro-Frota-Localiza5.jpg') !important;
     background-size: cover;
     background-position: center;
 }

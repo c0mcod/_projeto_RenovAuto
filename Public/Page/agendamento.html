@@ -18,6 +18,7 @@
 
     <!-- CSS DA BIBLIOTECA JS FLATPICKR  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -168,15 +169,23 @@
                     <span class="close">&times;</span>
                     <h2>Alugar <span id="carro-nome-modal"></span></h2>
                     <p>Preço: R$<span id="carro-preco-modal"></span> por dia</p>
-                    <form>
-                        <label for="dias">Número de dias:</label>
-                        <input type="number" id="dias" name="dias" min="1" value="1">
-                        <button type="submit" class="btn-submit">Confirmar Aluguel</button>
+                    <form id="aluguel-form">
                         <label for="calendario">Selecione o período de aluguel:</label>
-                        <input type="text" id="calendario" name="calendario">
+                        <input type="text" id="calendario" name="calendario" required>
+                        <button type="submit" class="btn-submit">Confirmar Aluguel</button>
                     </form>
                 </div>
             </div>
+
+            <!-- Modal de Notificação -->
+            <div id="modal-notificacao" class="modal">
+                <div class="modal-content">
+                    <span class="close-notificacao">&times;</span>
+                    <h2>Confirmação de Aluguel</h2>
+                    <p id="notificacao-mensagem"></p>
+                </div>
+            </div>
+
 
     </section>
 

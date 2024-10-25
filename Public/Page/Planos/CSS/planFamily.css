@@ -27,11 +27,6 @@ body {
     text-align: center;
 }
 
-.beneficios, .service-item {
-    visibility: hidden;
-}
-
-/* Header */
 header {
     background-color: #000;
     color: #fff;
@@ -151,46 +146,7 @@ nav .effect-underline {
     background-color: #0056b3;
 }
 
-/* Beneficios */
-.beneficios {
-    padding: 100px;
-    text-align: center;
-}
-
-.beneficios h3 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.beneficios .service-item {
-    display: inline-block;
-    width: 300px;
-    height: 180px;
-    padding: 20px;
-    border-radius: 6px;
-    margin: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    vertical-align: top; /* Adiciona isso */
-}
-.beneficios .service-item:hover {
-    transform: scale(1.05);
-}
-
-.beneficios h4 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #111;
-}
-
-.beneficios p {
-    font-size: 1.1em;
-    color: #666;
-}
-
-/* Contato */
+/* formulário */
 .contact-section {
     width: 100%;
     max-width: 1000px;
@@ -275,6 +231,66 @@ nav .effect-underline {
     background-color: #0056b3;
 }
 
+/* .contact-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+} */
 
 /* Footer */
 footer {

@@ -5,6 +5,10 @@
     padding-top: -50px ;
 }
 
+/* .swiper-slide {
+    transition: transform 0.6s ease-in-out;
+} */
+
 .products h3 {
     font-size: 2em;
     color: #333;

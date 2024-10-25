@@ -75,3 +75,27 @@ revelar.reveal('.img-plan',
         distance: '100px',
         origin: "left"
     })
+
+revelar.reveal('.service-item',
+    {
+        duration: 1000,
+        distancer: '100px',
+        delay: 400,
+        origin: "bottom",
+    })
+
+revelar.reveal('.service-item2',
+    {
+        duration: 1000,
+        distance: '100px',
+        delay: 800,
+        origin: "bottom",
+    })
+
+revelar.reveal('.service-item3',
+    {
+        duration: 1000,
+        distance: '100px',
+        delay: 1200,
+        origin: "bottom",
+    })

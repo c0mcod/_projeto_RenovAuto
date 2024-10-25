@@ -59,71 +59,76 @@
     </section>
 
     <!-- Seção de Serviços -->
-
-    <section class="services" id="servicos">
-        <h3 class="title-plans">Nossos Serviços</h3>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="service-item swiper-slide effect-reveal-1">
-                    <h4>Locação de Veículos</h4>
-                    <p>Aluguel de carros para viagens, trabalho e lazer. Diversidade de modelos disponíveis.</p>
+    <section class="services" id="services">
+        <h2 class="services-title">Nossos Serviços</h2>
+        <div class="service-box">
+            <div class="service-card">
+                <img src="./Public/Images/pessoas dentro de carro.webp" alt="Aluguel de Carros">
+                <div class="text-services">
+                    <h3>Aluguel de Carros</h3>
+                    <p>Explore a cidade com liberdade e conforto. Modelos variados e preços acessíveis.</p>
                 </div>
-                <div class="service-item swiper-slide effect-reveal-2">
-                    <h4>Gestão de Frotas</h4>
-                    <p>Soluções para empresas que precisam gerenciar sua frota de veículos com eficiência.</p>
-                </div>
-                <div class="service-item swiper-slide effect-reveal-3">
-                    <h4>Suporte 24h</h4>
-                    <p>Atendimento de emergência disponível 24 horas por dia, 7 dias por semana.</p>
-                </div>
+                <a href="#more-info" class="service-link">Saiba Mais</a>
             </div>
-            <!-- Adicionar botões de navegação do swiper -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+            <div class="service-card">
+                <img src="./Public/Images/funcion.webp" alt="Transporte Executivo">
+                <div class="text-services">
+                    <h3>Transporte Empresarial</h3>
+                    <p>Serviço de motorista para seus funcionários. Profissionais prontos para te atender.</p>
+                </div>
+                <a href="#more-info" class="service-link">Saiba Mais</a>
+            </div>
+
+            <div class="service-card">
+                <img src="./Public/Images/mecanico.jpg" alt="Manutenção de Veículos">
+                <div class="text-services">
+                    <h3>Manutenção de Veículos</h3>
+                    <p>Cuide bem do seu carro com nossos serviços rápidos e de qualidade.</p>
+                </div>
+                <a href="#more-info" class="service-link">Saiba Mais</a>
+            </div>
         </div>
     </section>
-    
-    <!-- <section class="services" id="servicos">
-        <h3 class="title-plans">Nossos Serviços</h3>
-        <div class="service-item swiper-slide effect-reveal-1">
-            <h4>Locação de Veículos</h4>
-            <p>Aluguel de carros para viagens, trabalho e lazer. Diversidade de modelos disponíveis.</p>
-        </div>
-        <div class="service-item swiper-slide effect-reveal-2">
-            <h4>Gestão de Frotas</h4>
-            <p>Soluções para empresas que precisam gerenciar sua frota de veículos com eficiência.</p>
-        </div>
-        <div class="service-item swiper-slide effect-reveal-3">
-            <h4>Suporte 24h</h4>
-            <p>Atendimento de emergência disponível 24 horas por dia, 7 dias por semana.</p>
-        </div>
-    </section> -->
+
+
 
     <!-- Seção de Planos -->
-    <section class="content" id="planos">
-        <h3 class="title-plans">Planos de Aluguel</h3>
-        <div class="box-plans">
-            <div class="container-content">
-                <div class="content-services1" id="fcontent">
-                    <h2>Mais praticidade para seus funcionários!</h2>
-                    <div class="text-plans">
-                        <p>Inserir vantagens para empresas</p>
-                    </div>
-                    <a href="./Public/Page/Planos/planEnterprise.html"><button type="button" class="btn-plan">Clique e
-                            confira!</button></a>
-                </div>
-                <!-- Acrescentar alguma função -->
+    <section class="rental-plans" id="plans">
+        <h2 class="plans-title">Nossos Planos de Aluguel</h2>
+        <div class="plan-container">
+            <div class="plan-card popular-plan">
+                <h3 class="plan-name">Plano Padrão</h3>
+                <ul class="plan-features">
+                    <li><span class="icon">🚗</span> Acesso a todos os veículos</li>
+                    <li><span class="icon">🔒</span> Seguro completo</li>
+                    <li><span class="icon">🕒</span> Aluguel diário</li>
+                </ul>
+                <p class="plan-price">R$ 100/dia</p>
+                <a href="/Public/Page/agendamento.html"><button class="btn-select">Selecionar Plano</button></a>
             </div>
-            <div class="container-content">
-                <div class="content-services2">
-                    <h2>Mais conforto para suas viajens em família!</h2>
-                    <div class="text-plans">
-                        <p>Inserir vantagens para para quem precisa do uso para viagem</p>
-                    </div>
-                    <a href="./Public/Page/Planos/planFamily.html"><button type="button" class="btn-plan">Clique e
-                            confira!</button></a>
-                </div>
-                <!-- Acrescentar alguma função -->
+            <div class="plan-card">
+                <h3 class="plan-name">Plano Empresarial</h3>
+                <ul class="plan-features">
+                    <li><span class="icon">🚗</span> Acesso a todos os veículos</li>
+                    <li><span class="icon">🔒</span> Seguro completo</li>
+                    <li><span class="icon">🛠️</span> Assistência 24h</li>
+                    <li><span class="icon">🕒</span> Aluguel semestral</li>
+                </ul>
+                <p class="plan-price">R$ 150/dia</p>
+                <a href="/Public/Page/Planos/planEnterprise.html"><button class="btn-select">Selecionar
+                        Plano</button></a>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-name">Plano família</h3>
+                <ul class="plan-features">
+                    <li><span class="icon">🚗</span> Acesso a veiculos mais confortáveis</li>
+                    <li><span class="icon">🔒</span> Seguro completo</li>
+                    <li><span class="icon">🛠️</span> Assistência 24h</li>
+                    <li><span class="icon">🍹</span> descontos em nossas pousadas parceiras</li>
+                </ul>
+                <p class="plan-price">R$ 300/dia</p>
+                <a href="/Public/Page/Planos/planFamily.html"><button class="btn-select">Selecionar Plano</button></a>
             </div>
         </div>
     </section>
@@ -263,6 +268,27 @@
         </div>
     </section>
 
+    <!-- SEÇÃO SOBRE A EMPRESA -->
+    <section class="about-us" id="about-us">
+        <h2>Sobre Nós</h2>
+        <p>Na RenovAuto, somos apaixonados por proporcionar experiências de aluguel de veículos excepcionais. Nossa missão é oferecer liberdade e conforto em cada viagem, sempre com um atendimento de qualidade.</p>
+        <h3>Missão</h3>
+        <p>Facilitar o acesso a veículos de qualidade, garantindo segurança e confiança.</p>
+        <h3>História</h3>
+        <p>Fundada em 2024, a RenovAuto começou com um pequeno lote de carros e cresceu para se tornar um dos líderes do setor em alocação de veículos.</p>
+        <h3>Nossa Equipe</h3>
+        <p>Contamos com uma equipe dedicada e experiente, pronta para atender às suas necessidades.</p>
+        <h2>Nossos Serviços</h2>
+        <p>Na RenovAuto, cada serviço que oferecemos reflete nosso compromisso com qualidade e segurança.</p>
+        <h3>Aluguel de Carros</h3>
+        <p>Nossa variedade de veículos permite que você explore a cidade com conforto e liberdade.</p>
+        <h3>Transporte Empresarial</h3>
+        <p>Oferecemos serviços de transporte para garantir a conveniência e segurança dos seus funcionários.</p>
+        <h3>Manutenção de Veículos</h3>
+        <p>Estamos comprometidos em manter nossos veículos em perfeito estado, garantindo a segurança de nossos clientes.</p>
+    </section>
+    
+
     <!-- Seção de Feedback -->
     <section class="feedback-section" id="feedbacks">
         <h2 class="title-plans">O que os nossos clientes dizem sobre nós?</h2>
@@ -304,6 +330,9 @@
             </div>
         </div>
     </section>
+
+    <button id="scrollToTop" class="scroll-to-top">Voltar ao Topo</button>
+
 
     <!-- Rodapé -->
     <footer>

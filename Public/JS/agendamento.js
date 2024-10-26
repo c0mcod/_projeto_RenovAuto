@@ -1,3 +1,4 @@
+
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -21,45 +22,74 @@ hideDetailButtons.forEach((button, index) => {
     });
 });
 
-// Modal
-const modal = document.getElementById('modal-aluguel');
-const closeModal = document.querySelector('.close');
-
-document.querySelectorAll('.alugar-btn').forEach(button => {
-    button.addEventListener('click', function () {
-
-        const carroNome = this.getAttribute('data-carro');
-        const carroPreco = this.getAttribute('data-preco');
-
-        // Define o nome e preço do carro no modal
-        document.getElementById('carro-nome-modal').textContent = carroNome;
-        document.getElementById('carro-preco-modal').textContent = carroPreco;
-
-        modal.style.display = 'block';
+document.addEventListener("DOMContentLoaded", function () {
+    const flatpickrInstance = flatpickr("#calendario", {
+        minDate: "today",
+        maxDate: new Date().fp_incr(14),
+        mode: "range",
+        enableTime: true,
+        position: "auto",
+        dateFormat: "Y-m-d H:i",
+        onChange: function (selectedDates) {
+            console.log(selectedDates);
+        }
     });
-});
 
-closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+    const modalAluguel = document.getElementById("modal-aluguel");
+    const closeModal = document.querySelector('.close');
+    const modalNotificacao = document.getElementById("modal-notificacao");
+    const closeModalNotificacao = document.querySelector(".close-notificacao");
+    const notificacaoMensagem = document.getElementById("notificacao-mensagem");
 
-window.addEventListener('click', function (event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    function closeAllModals() {
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.style.display = 'none';
+        });
     }
-});
 
-// Função para confirmar o aluguel e exibir o alerta
-document.querySelector('#modal-aluguel form').addEventListener('submit', function (event) {
-    event.preventDefault();
+    document.querySelectorAll('.alugar-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const carroNome = this.getAttribute('data-carro');
+            const carroPreco = this.getAttribute('data-preco');
+            document.getElementById('carro-nome-modal').textContent = carroNome;
+            document.getElementById('carro-preco-modal').textContent = carroPreco;
+            modalAluguel.style.display = 'block';
+        });
+    });
 
-    const dias = document.getElementById('dias').value;
-    const carroNome = document.getElementById('carro-nome-modal').textContent;
-    const carroPreco = document.getElementById('carro-preco-modal').textContent;
+    closeModal.addEventListener('click', () => {
+        modalAluguel.style.display = 'none';
+    });
 
-    const precoTotal = carroPreco * dias;
+    window.addEventListener('click', function (event) {
+        if (event.target == modalAluguel || event.target == modalNotificacao) {
+            closeAllModals();
+        }
+    });
 
-    alert(`Você alugou o ${carroNome} por ${dias} dias. Preço total: R$${precoTotal}`);
+    document.querySelector('#modal-aluguel form').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    modal.style.display = 'none';
+        const carroNome = document.getElementById('carro-nome-modal').textContent;
+        const carroPreco = parseFloat(document.getElementById('carro-preco-modal').textContent);
+        const dates = flatpickrInstance.selectedDates;
+
+        if (dates.length === 2 && dates[0] && dates[1]) {
+            const startDate = dates[0];
+            const endDate = dates[1];
+            const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+            const precoTotal = carroPreco * totalDays;
+
+            closeAllModals();  // Fecha todos os modais antes de abrir a notificação
+
+            notificacaoMensagem.textContent = `Você alugou o ${carroNome} por ${totalDays} dias. Preço total: R$${precoTotal.toFixed(2)}. Período: ${startDate.toLocaleString()} até ${endDate.toLocaleString()}`;
+            modalNotificacao.style.display = "block";
+        } else {
+            alert("Por favor, selecione um período válido.");
+        }
+    });
+
+    closeModalNotificacao.addEventListener("click", function () {
+        closeAllModals();
+    });
 });

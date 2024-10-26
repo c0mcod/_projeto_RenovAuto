@@ -262,7 +262,7 @@ nav .effect-underline {
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #00c43f;
+    background-color: #111;
     color: white;
     text-decoration: none;
     border-radius: 0 0 10px 10px;
@@ -333,7 +333,7 @@ nav .effect-underline {
 .plan-features {
     list-style-type: none;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .icon {

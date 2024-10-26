@@ -101,3 +101,14 @@ revelar.reveal('.service-item3',
         delay: 1200,
         origin: "bottom",
     })
+
+revelar.reveal('.plans-title',
+    {
+        duration: 1000,
+        distance: '100px'
+    })
+revelar.reveal('.services-title',
+    {
+        duration: 1000,
+        distance: '100px'
+    })

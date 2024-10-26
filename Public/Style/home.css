@@ -336,8 +336,16 @@ nav .effect-underline {
     text-align: left;
 }
 
+.plan-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    height: 40px; /* Altura fixa */
+}
+
 .icon {
-    margin-right: 10px;
+    margin-right: 8px; 
+    flex-shrink: 0;
 }
 
 .plan-price {
@@ -434,95 +442,64 @@ nav .effect-underline {
 
 @media (max-width: 768px) {
     .feedback-card {
-        width: 100%; /* Faz os cards ocuparem toda a largura disponível em telas menores */
-        max-width: 300px; /* Limita a largura máxima dos cards */
+        width: 100%;
+        max-width: 300px;
     }
 }
 
-/* .feedback-section {
-    padding: 80px 40px;
-    overflow: hidden;
-    background-color: #f0f0f0;
-    white-space: nowrap;
-}
-
-.feedback-container {
-    display: inline-block;
-    animation: scrollHorizontal 40s linear infinite;
-}
-
-.feedback-card {
-    display: inline-block;
-    width: 350px;
-    height: 350px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 0 10px;
-    text-align: center;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    overflow: hidden;
-}
-
-.txt-feedback {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #555;
-    margin-top: 10px;
-    word-wrap: break-word;
-    white-space: normal;
-    height: auto;
-}
-
-.pfp-user {
-    width: 60px;
-    height: 60px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-} */
-
-/* Animação de scroll horizontal suave */
-/* @keyframes scrollHorizontal {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 /* SEÇÃO ABOUT US */
-.about-us {
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* Cor de fundo suave */
-    text-align: center; /* Centraliza o texto */
+.about-section {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.about-us h2 {
-    font-size: 2.5em;
-    color: #007BFF; /* Cor para o título */
-    margin-bottom: 20px;
+.about-section h1 {
+    color: #333;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.about-us h3 {
-    font-size: 1.8em;
-    color: #333; /* Cor para subtítulos */
-    margin-top: 30px;
+.about-section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 20px;
     margin-bottom: 10px;
+    border-bottom: 2px solid wheat;
+    padding-bottom: 5px;
 }
 
-.about-us p {
-    font-size: 1.2em;
-    line-height: 1.6; /* Melhora a legibilidade */
-    color: #555; /* Cor para o texto */
-    max-width: 800px; /* Limita a largura do texto */
-    margin: 0 auto; /* Centraliza o texto */
-    padding: 0 10px; /* Padding para dispositivos pequenos */
+.about-section p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
 }
 
+.about-section .service-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.about-section .service-list li {
+    background: #ecf0f1;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section .service-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 /* Footer */
 footer {

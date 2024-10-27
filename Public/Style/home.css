@@ -53,6 +53,7 @@ header {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -199,19 +200,14 @@ nav .effect-underline {
     background-color: #00c43f;
     color: #fff;
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border-radius: 30px;
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.remove-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.hero button:hover {
+.hero-btn:hover {
     background-color: #04832c;
     cursor: pointer;
 }
@@ -359,6 +355,7 @@ nav .effect-underline {
     color: white;
     padding: 10px 20px;
     border: none;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -366,6 +363,7 @@ nav .effect-underline {
 
 .btn-select:hover {
     background-color: #45a049;
+    color: white;
 }
 
 /* Responsividade */

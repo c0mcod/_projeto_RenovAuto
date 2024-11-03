@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card-item">
                     <div class="card-inner">
                         <div class="card-front">
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card-item">
                     <div class="card-inner">
                         <div class="card-front">
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card-item">
                     <div class="card-inner">
                         <div class="card-front">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card-item">
                     <div class="card-inner">
                         <div class="card-front">
@@ -158,31 +158,53 @@
             </div>
         </div>
     </section>
-    
 
-            <!-- Modal para Aluguel -->
-            <div id="modal-aluguel" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Alugar <span id="carro-nome-modal"></span></h2>
-                    <p>Preço: R$<span id="carro-preco-modal"></span> por dia</p>
-                    <form id="aluguel-form">
-                        <label for="calendario">Selecione o período de aluguel:</label>
-                        <input type="text" id="calendario" name="calendario" required>
-                        <button type="submit" class="btn-submit">Confirmar Aluguel</button>
-                    </form>
+
+    <!-- Modal para Aluguel -->
+    <div id="modal-aluguel" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Alugar <span id="carro-nome-modal"></span></h2>
+            <p>Preço: R$<span id="carro-preco-modal"></span> por dia</p>
+            <form id="aluguel-form">
+                <label for="calendario">Selecione o período de aluguel:</label>
+                <input type="text" id="calendario" name="calendario" required>
+
+                <div class="payment-section">
+                    <h3>Escolha a Forma de Pagamento</h3>
+                    <div class="payment-options">
+                        <label>
+                            <input type="radio" name="payment" value="credit-card"> Cartão de Crédito
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="debit-card"> Cartão de Débito
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="pix"> Pix
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="boleto"> Boleto Bancário
+                        </label>
+                    </div>
                 </div>
-            </div>
+
+                <button type="submit" class="btn-submit">Confirmar Aluguel</button>
+            </form>
+
+        </div>
+    </div>
+    </div>
 
 
-            <!-- Modal de Notificação -->
-            <div id="modal-notificacao" class="modal">
-                <div class="modal-content">
-                    <span class="close-notificacao">&times;</span>
-                    <h2>Confirmação de Aluguel</h2>
-                    <p id="notificacao-mensagem"></p>
-                </div>
-            </div>
+
+    <!-- Modal de Notificação -->
+    <div id="modal-notificacao" class="modal">
+        <div class="modal-content">
+            <span class="close-notificacao">&times;</span>
+            <h2>Confirmação de Aluguel</h2>
+            <p id="notificacao-mensagem"></p>
+        </div>
+    </div>
     </section>
 
     <footer>

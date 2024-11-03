@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const carroPreco = this.getAttribute('data-preco');
             document.getElementById('carro-nome-modal').textContent = carroNome;
             document.getElementById('carro-preco-modal').textContent = carroPreco;
-            modalAluguel.style.display = 'block';
+            modalAluguel.style.display = 'flex';
         });
     });
 
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             closeAllModals();  // Fecha todos os modais antes de abrir a notificação
 
             notificacaoMensagem.textContent = `Você alugou o ${carroNome} por ${totalDays} dias. Preço total: R$${precoTotal.toFixed(2)}. Período: ${startDate.toLocaleString()} até ${endDate.toLocaleString()}`;
-            modalNotificacao.style.display = "block";
+            modalNotificacao.style.display = "flex";
         } else {
             alert("Por favor, selecione um período válido.");
         }

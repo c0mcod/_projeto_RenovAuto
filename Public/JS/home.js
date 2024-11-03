@@ -24,4 +24,3 @@ document.getElementById("scrollToTop").onclick = function () {
         behavior: 'smooth'
     });
 };
-

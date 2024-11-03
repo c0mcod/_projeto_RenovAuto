@@ -20,7 +20,8 @@ body {
     line-height: 1.6;
 }
 
-.title-plans {
+.title-plans  {
+    margin-top: 80px;
     font-size: 2em;
     margin-bottom: 30px;
     color: #333;
@@ -106,11 +107,11 @@ nav .effect-underline {
 }
 
 .img-plan {
+    margin-left: -54px;
     flex: 1;
     width: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 #hero-content {
@@ -135,7 +136,7 @@ nav .effect-underline {
 }
 
 .hero-plan-btn {
-    padding: 0px 20px;
+    padding: 15px;
     background-color: #007bff;
     color: white;
     border: none;

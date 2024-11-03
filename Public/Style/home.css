@@ -35,6 +35,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .services,
     .content-services1,
     .content-services2,
@@ -98,7 +99,7 @@ nav .effect-underline {
     width: 100%;
     left: 0;
 }
-
+/* menu */
 .hamburger-menu {
     display: none;
     background: none;
@@ -106,15 +107,30 @@ nav .effect-underline {
     font-size: 30px;
     color: white;
     cursor: pointer;
+    outline: none;
+    box-shadow: none;
 }
+
+.hamburger-menu:focus,
+.hamburger-menu:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
+    header h1 {
+        margin-top: 25px;
+    }
+
     nav .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 80px;
         right: 0;
         background-color: #000;
         width: 100%;
@@ -146,9 +162,8 @@ nav .effect-underline {
 
     .effect-underline:hover:after {
         width: 0;
-    }
+    }    
 }
-
 
 /* SEÇÃO PRINCIPAL(HERO) */
 .hero {
@@ -250,7 +265,9 @@ nav .effect-underline {
 .text-services {
     padding: 20px;
 }
-.text-services p, h3{
+
+.text-services p,
+h3 {
     font-size: 1em;
 }
 
@@ -323,7 +340,7 @@ nav .effect-underline {
 }
 
 .popular-plan {
-    border: 2px solid #4caf50; 
+    border: 2px solid #4caf50;
 }
 
 .plan-features {
@@ -336,18 +353,19 @@ nav .effect-underline {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    height: 40px; /* Altura fixa */
+    height: 40px;
+    /* Altura fixa */
 }
 
 .icon {
-    margin-right: 8px; 
+    margin-right: 8px;
     flex-shrink: 0;
 }
 
 .plan-price {
     font-size: 1.5em;
     margin: 20px 0;
-    color: #4caf50; 
+    color: #4caf50;
 }
 
 .btn-select {
@@ -370,12 +388,12 @@ nav .effect-underline {
 @media (max-width: 768px) {
     .plan-container {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .plan-card {
         width: 90%;
-        margin: 10px 0; 
+        margin: 10px 0;
     }
 }
 
@@ -417,7 +435,7 @@ nav .effect-underline {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px; 
+    margin: 10px;
 }
 
 .feedback-text p {
@@ -518,9 +536,13 @@ footer a {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-    background-color: #111; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #111;
+    opacity: 0.7;
+    /* ajusta o valor para aumentar ou reduzir a opacidade */
+    transition: opacity 0.3s;
+    /* animação suave ao passar o mouse */
     color: white;
     border: none;
     border-radius: 5px;
@@ -529,8 +551,10 @@ footer a {
     display: none;
     z-index: 1000;
 }
+
 .scroll-to-top:hover {
     background-color: black;
+    opacity: 1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -677,7 +701,7 @@ footer a {
 @media (max-width: 600px) {
     .pfp-user {
         width: 50px;
-        height: 50px; 
+        height: 50px;
     }
 
     .txt-feedback {

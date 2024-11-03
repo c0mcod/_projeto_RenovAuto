@@ -71,62 +71,6 @@
     margin-bottom: 10px;
 }
 
-/* .card-list .card-item {
-    color: #333;
-    user-select: none;
-    width: 200px;
-    padding: 35px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 8px;
-    backdrop-filter: blur(30px);
-    background: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.card-list .card-item .user-image {
-    max-width:300px;
-    max-height:200px;
-    width: auto;
-    height: auto;
-    margin-bottom: 40px;
-    padding: 4px;
-}
-
-.card-list .card-item .car-descr {
-    font-size: 1.15rem;
-    color: #333e2c;
-    font-weight: 500;
-    margin: 14px 0 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.descrip {
-    display: flex;
-    justify-content: flex-end;
-} */
-
-/* .card-list .card-item .alugar {
-    font-size: 1.25rem;
-    padding: 10px 35px;
-    color: #fff;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    background: #00a334;
-    border: 2px solid transparent;
-    transition: 0.2s ease;
-}
-
-.card-list .card-item .alugar:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #00a380;
-    color: #111
-} */
-
 .slider-wrapper .swiper-pagination-bullet {
     background: #333;
     height: 15px;
@@ -191,6 +135,12 @@
 .card-back {
     background-color: #f0f0f0;
     transform: rotateY(180deg);
+}
+
+.card-back ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 /* Efeito de flip quando a classe 'flipped' é adicionada */

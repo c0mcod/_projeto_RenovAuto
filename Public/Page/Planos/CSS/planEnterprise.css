@@ -117,11 +117,11 @@ nav .effect-underline {
 }
 
 .img-plan {
+    margin-left: -54px;
     flex: 1;
     width: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 #hero-content {

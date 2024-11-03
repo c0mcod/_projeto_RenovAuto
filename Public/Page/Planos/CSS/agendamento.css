@@ -223,8 +223,13 @@ nav .effect-underline {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
+.card-back h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
 .card-front {
     background-color: #ffffff;
 }

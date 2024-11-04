@@ -296,6 +296,26 @@ header {
     margin-top: 10px;
 }
 
+.btn-details {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-details:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #0056b3;
+    color: #111;
+    border-radius: 8px;
+}
+
 .price {
     font-weight: bold;
     color: #2d87f0;
@@ -339,6 +359,7 @@ header {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .contact-section h2 {
@@ -403,17 +424,23 @@ header {
 }
 
 .submit-btn {
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
+    margin-top: 10px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    text-decoration: none;
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #0056b3;
+    color: #111;
+    border-radius: 8px;
 }
 
 /* Media Queries para Responsividade */

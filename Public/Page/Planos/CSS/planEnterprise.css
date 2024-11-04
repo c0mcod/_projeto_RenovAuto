@@ -178,7 +178,8 @@ header {
     justify-content: space-between;
     align-items: stretch;
     position: relative;
-    z-index: 2; /* Aumentado para ficar acima do overlay */
+    z-index: 2;
+    /* Aumentado para ficar acima do overlay */
 }
 
 .img-plan {
@@ -195,7 +196,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: transparent; /* Removido o fundo escuro para mostrar o overlay */
+    background-color: transparent;
+    /* Removido o fundo escuro para mostrar o overlay */
 }
 
 .text-plan-E {
@@ -256,7 +258,7 @@ header {
         padding: 20px;
         text-align: center;
     }
-    
+
     .text-plan-E {
         font-size: 2rem;
     }
@@ -285,16 +287,23 @@ header {
 }
 
 .btn-details {
-    padding: 10px;
-    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
     border: none;
     background-color: #007bff;
-    transition: transform 0.2s;
-    color: wheat;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    text-decoration: none;
 }
 
 .btn-details:hover {
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #0056b3;
+    color: #111;
+    border-radius: 8px;
 }
 
 .plan-card:hover {
@@ -360,6 +369,7 @@ header {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .contact-section h2 {
@@ -424,17 +434,23 @@ header {
 }
 
 .submit-btn {
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
+    margin-top: 10px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    text-decoration: none;
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #0056b3;
+    color: #111;
+    border-radius: 8px;
 }
 
 /* Media Queries para Responsividade */

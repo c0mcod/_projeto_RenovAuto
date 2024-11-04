@@ -154,49 +154,63 @@ header {
 .hero-section {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     height: 100vh;
     background-color: #111;
     position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    z-index: 1;
 }
 
 .container-plan-E {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    height: 100%;
     justify-content: space-between;
-    align-items: center;
-    z-index: 1;
+    align-items: stretch;
+    position: relative;
+    z-index: 2; /* Aumentado para ficar acima do overlay */
 }
 
 .img-plan {
-    margin-left: -54px;
-    flex: 1;
     width: 50%;
     height: 100%;
     object-fit: cover;
 }
 
 #hero-content {
-    flex: 1;
-    padding: 50px;
+    width: 50%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: transparent; /* Removido o fundo escuro para mostrar o overlay */
 }
 
 .text-plan-E {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 #text-plan-E {
     margin: 20px 0;
     color: #f8f9fa;
     font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .hero-plan-btn {
@@ -220,35 +234,18 @@ header {
     cursor: pointer;
 }
 
-/* HERO-PLANO */
+/* HERO-PLANO MOBILE */
 @media (max-width: 768px) {
     .hero-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        position: relative;
         background-image: url('/Public/Images/empresario-de-sucesso.webp');
         background-size: cover;
         background-position: center;
-    }
-
-    .hero-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(17, 17, 17, 0.7);
-        z-index: 0;
     }
 
     .container-plan-E {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1;
     }
 
     .img-plan {
@@ -256,9 +253,13 @@ header {
     }
 
     #hero-content {
-        flex: 1;
+        width: 100%;
         padding: 20px;
         text-align: center;
+    }
+    
+    .text-plan-E {
+        font-size: 2rem;
     }
 }
 
@@ -350,8 +351,7 @@ header {
     }
 }
 
-
-/* Contato */
+/* Seção de Contato */
 .contact-section {
     width: 100%;
     max-width: 1000px;
@@ -436,6 +436,48 @@ header {
 .submit-btn:hover {
     background-color: #0056b3;
 }
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        /* Altera a direção para coluna em telas menores */
+    }
+
+    .divider {
+        display: none;
+        /* Esconde a divisória em telas menores */
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        /* Faz os contêineres ocuparem toda a largura */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px;
+        /* Reduz o padding na seção de contato */
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        /* Ajusta o tamanho do título */
+    }
+
+    .form-group label {
+        font-size: 14px;
+        /* Ajusta o tamanho das labels */
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        /* Ajusta o tamanho do botão */
+    }
+}
+
 
 
 /* Footer */

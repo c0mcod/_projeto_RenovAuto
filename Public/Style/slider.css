@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-top: -50px ;
+    margin-top: 50px; /* ou outro valor apropriado */
 }
 
 /* .swiper-slide {
@@ -183,9 +183,7 @@ button:hover {
     .slider-wrapper .swiper-slide-button {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
+    
     .card-list .card-item {
         width: 180px;
     }
@@ -197,9 +195,7 @@ button:hover {
     .card-list .card-item h2 {
         font-size: 1.2rem;
     }
-}
-
-@media (max-width: 768px) {
+    
     .slider-wrapper .swiper-slide {
         width: 200px;
     }

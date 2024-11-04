@@ -117,8 +117,9 @@ header {
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding-bottom: 1rem;
+        padding: 1rem 0;
     }
 
     .mobile-menu .nav-item {
@@ -170,7 +171,8 @@ header {
     justify-content: space-between;
     align-items: stretch;
     position: relative;
-    z-index: 2; /* Aumentado para ficar acima do overlay */
+    z-index: 2;
+    /* Aumentado para ficar acima do overlay */
 }
 
 .img-plan {
@@ -187,7 +189,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: transparent; /* Removido o fundo escuro para mostrar o overlay */
+    background-color: transparent;
+    /* Removido o fundo escuro para mostrar o overlay */
 }
 
 .text-plan-E {
@@ -248,7 +251,7 @@ header {
         padding: 20px;
         text-align: center;
     }
-    
+
     .text-plan-E {
         font-size: 2rem;
     }

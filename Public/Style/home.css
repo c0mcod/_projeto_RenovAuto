@@ -13,7 +13,7 @@ html {
 }
 
 p {
-    font-family: "Segoe UI";
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -135,8 +135,9 @@ header {
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding-bottom: 1rem;
+        padding: 1rem 0;
     }
     .mobile-menu .nav-item {
         display: block;
@@ -193,12 +194,14 @@ header {
 .hero h2 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 40px;
     max-width: 600px;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero .hero-btn {
@@ -586,7 +589,7 @@ footer a {
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .hero button {

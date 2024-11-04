@@ -1,12 +1,13 @@
-// Menu hamburguer
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
-
-hamburgerMenu.addEventListener('click', () => {
-    // Só para confirmação de debug
-    console.log('Menu hamburguer clicado');
-    navLinks.classList.toggle('active');
-});
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "/Public/Images/svg/menu_white_36dp.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "/Public/Images/svg/close_white_36dp.svg";
+    }
+}
 
 // botão de scroll para o topo do site
 window.onscroll = function () {

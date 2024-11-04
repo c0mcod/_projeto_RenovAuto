@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../Planos/CSS/planFamily.css">
 
         <!-- SWIPER -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/Public/Style/slider.css">
 
         <!-- FAVICON -->
@@ -32,18 +32,35 @@
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <nav>
-            <div id="icon">
+        <nav class="nav-bar">
+            <div class="logo">
                 <h1>RenovAuto</h1>
             </div>
-            <div id="group" class="nav-links">
-                <a href="/index.html" class="effect-underline text-reset">Início</a>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a href="#carros">Carros</a></li>
+                    <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+                </ul>
             </div>
-            <button class="hamburger-menu" id="hamburger-menu">
-                &#9776;
-            </button>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/Public/Images/svg/menu_white_36dp.svg"
+                        alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a href="#carros">Carros</a></li>
+                <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+            </ul>
+
+        </div>
     </header>
+
 
     <!-- Seção Hero -->
     <section class="hero-section">
@@ -53,139 +70,220 @@
                 <h2 class="text-plan-E">Buscando os melhores preços e benefícios para os seus funcionários?</h2>
                 <p id="text-plan-E">Confira mais abaixo sobre o nosso plano empresarial e entre contato conosco para
                     adquirir este pacote!</p>
-                <a href="#">
-                    <button type="button" class="hero-plan-btn"><b>Fale conosco!</b></button>
-                </a>
+                <a href="#contato" class="hero-plan-btn">Fale Conosco!</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cards de Planos -->
+    <section class="plans-cards">
+        <h2>Escolha o Plano Ideal para Sua Família</h2>
+        <div class="card-grid">
+            <!-- Plano Básico -->
+            <div class="plan-card">
+                <h3>Plano Básico Familiar</h3>
+                <p>A opção mais econômica para famílias.</p>
+                <ul>
+                    <li>🚗 Quilometragem: 500 km</li>
+                    <li>👥 2 motoristas adicionais</li>
+                    <li>🔒 Seguro básico incluído</li>
+                </ul>
+                <p class="price">R$ 150/dia</p>
+                <button class="btn-details">fale conosco!</button>
+            </div>
+
+            <!-- Plano Completo -->
+            <div class="plan-card">
+                <h3>Plano Completo</h3>
+                <p>Mais flexibilidade e segurança para suas viagens.</p>
+                <ul>
+                    <li>🚗 Quilometragem ilimitada</li>
+                    <li>👥 Motoristas adicionais ilimitados</li>
+                    <li>🔒 Seguro completo incluído</li>
+                    <li>📞 Assistência 24h</li>
+                </ul>
+                <p class="price">R$ 250/dia</p>
+                <button class="btn-details">Ver Detalhes</button>
+            </div>
+
+            <!-- Plano VIP -->
+            <div class="plan-card">
+                <h3>Plano VIP</h3>
+                <p>O pacote completo com benefícios exclusivos.</p>
+                <ul>
+                    <li>🚗 Quilometragem ilimitada</li>
+                    <li>👥 Motoristas adicionais ilimitados</li>
+                    <li>🔒 Seguro premium</li>
+                    <li>📞 Assistência 24h e carro reserva</li>
+                    <li>💼 Atendimento prioritário</li>
+                </ul>
+                <p class="price">R$ 350/dia</p>
+                <button class="btn-details">Ver Detalhes</button>
             </div>
         </div>
     </section>
 
     <!-- SLIDER DE CARROS DO PLANO -->
     <section class="products" id="carros">
-        <h3 class="title-plans">Principais veículos inclusos neste plano</h3>
+        <h3 class="title-plans">Principais veículos inclusos no plano</h3>
         <div class="container swiper">
             <div class="slider-wrapper">
 
                 <div class="card-list swiper-wrapper">
-                    <!-- Card 1 -->
+
+                    <!-- Card 1 - Jeep Commander -->
                     <div class="card-item swiper-slide">
                         <div class="card-inner">
                             <!-- Frente do card -->
                             <div class="card-front">
-                                <h2 class="user-name">Fiat Mobi</h2>
-                                <img src="/Public/Images/Cars/MOBI.png" alt="user-image" class="user-image">
+                                <h2 class="user-name">Jeep Commander</h2>
+                                <img src="/Public/Images/Cars/COMMANDER.png" alt="Jeep Commander" class="user-image">
                                 <div class="descrip">
                                     <ul class="car-descr">
-                                        <li>Modelo: <span>Fiat Mobi</span></li>
-                                        <li>Cor: <span>Cinza</span></li>
+                                        <li>Modelo: <span>Jeep Commander</span></li>
+                                        <li>Cor: <span>Preto</span></li>
                                     </ul>
                                 </div>
                                 <button class="show-details-btn">Mostrar Detalhes</button>
                             </div>
                             <!-- Verso do card -->
                             <div class="card-back">
-                                <h2>Detalhes do Fiat Mobi</h2>
-                                <p>Mais informações do veículo...</p>
+                                <h2>Detalhes do Jeep Commander</h2>
+                                <p>Espaçoso e robusto, ideal para aventuras em família. Equipado com motor 2.0 Turbo e
+                                    tração 4x4.</p>
+                                <ul>
+                                    <li>⛽Consumo: 10 km/l (cidade) e 12 km/l (estrada)</li>
+                                    <li>🐎Potência: 270 cv</li>
+                                    <li>💺Capacidade: 7 lugares</li>
+                                    <li>🧳Porta-malas: 233 L</li>
+                                </ul>
                                 <button class="hide-details-btn">Voltar</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
+                    <!-- Card 2 - Volkswagen T-Cross -->
                     <div class="card-item swiper-slide">
                         <div class="card-inner">
                             <div class="card-front">
-                                <h2 class="user-name">Fiat Argo</h2>
-                                <img src="/Public/Images/Cars/ARGO.png" alt="user-image" class="user-image">
+                                <h2 class="user-name">Volkswagen T-Cross</h2>
+                                <img src="/Public/Images/Cars/TAOS.png" alt="Volkswagen T-Cross" class="user-image">
                                 <div class="descrip">
                                     <ul class="car-descr">
-                                        <li>Modelo: <span>Fiat Argo</span></li>
+                                        <li>Modelo: <span>Volkswagen T-Cross</span></li>
                                         <li>Cor: <span>Vermelho</span></li>
                                     </ul>
                                 </div>
                                 <button class="show-details-btn">Mostrar Detalhes</button>
                             </div>
                             <div class="card-back">
-                                <h2>Detalhes do Fiat Argo</h2>
-                                <p>Mais informações do veículo...</p>
-                                <button class="hide-details-btn">Voltar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-item swiper-slide">
-                        <div class="card-inner">
-                            <!-- Frente do card -->
-                            <div class="card-front">
-                                <h2 class="user-name">Chevrolet Onix</h2>
-                                <img src="/Public/Images/Cars/CROA.png" alt="user-image" class="user-image">
-                                <div class="descrip">
-                                    <ul class="car-descr">
-                                        <li>Modelo: <span>Chevrolet Onix</span></li>
-                                        <li>Cor: <span>Cinza</span></li>
-                                    </ul>
-                                </div>
-                                <button class="show-details-btn">Mostrar Detalhes</button>
-                            </div>
-                            <!-- Verso do card -->
-                            <div class="card-back">
-                                <h2>Detalhes do Chevrolet Onix</h2>
-                                <p>Mais informações do veículo...</p>
-                                <button class="hide-details-btn">Voltar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="card-item swiper-slide">
-                        <div class="card-inner">
-                            <!-- Frente do card -->
-                            <div class="card-front">
-                                <h2 class="user-name">Chevrolet Prisma</h2>
-                                <img src="/Public/Images/Cars/Prisma-removebg-preview.png" alt="user-image"
-                                    class="user-image">
-                                <div class="descrip">
-                                    <ul class="car-descr">
-                                        <li>Modelo: <span>Chevrolet Prisma</span></li>
-                                        <li>Cor: <span>Cinza</span></li>
-                                    </ul>
-                                </div>
-                                <button class="show-details-btn">Mostrar Detalhes</button>
-                            </div>
-                            <!-- Verso do card -->
-                            <div class="card-back">
-                                <h2>Detalhes do Chevrolet Prisma</h2>
-                                <p>Mais informações do veículo...</p>
-                                <button class="hide-details-btn">Voltar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="card-item swiper-slide">
-                        <div class="card-inner">
-                            <!-- Frente do card -->
-                            <div class="card-front">
-                                <h2 class="user-name">Volkswagen T-Cross</h2>
-                                <img src="/Public/Images/Cars/T-Cross-removebg-preview.png" alt="user-image"
-                                    class="user-image">
-                                <div class="descrip">
-                                    <ul class="car-descr">
-                                        <li>Modelo: <span>Volkswagen T-Cross</span></li>
-                                        <li>Cor: <span>Cinza</span></li>
-                                    </ul>
-                                </div>
-                                <button class="show-details-btn">Mostrar Detalhes</button>
-                            </div>
-                            <!-- Verso do card -->
-                            <div class="card-back">
                                 <h2>Detalhes do Volkswagen T-Cross</h2>
-                                <p>Mais informações do veículo...</p>
+                                <p>Compacto e versátil, ideal para o dia a dia. Oferece conforto e tecnologia avançada.
+                                </p>
+                                <ul>
+                                    <li>⛽Consumo: 12 km/l (cidade) e 14 km/l (estrada)</li>
+                                    <li>🐎Potência: 128 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 373 L</li>
+                                </ul>
                                 <button class="hide-details-btn">Voltar</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 3 - Hyundai Tucson -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <!-- Frente do card -->
+                            <div class="card-front">
+                                <h2 class="user-name">Hyundai Tucson</h2>
+                                <img src="/Public/Images/Cars/TUCN.png" alt="Hyundai Tucson" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Hyundai Tucson</span></li>
+                                        <li>Cor: <span>Prata</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <!-- Verso do card -->
+                            <div class="card-back">
+                                <h2>Detalhes do Hyundai Tucson</h2>
+                                <p>Elegante e espaçoso, perfeito para famílias. Conta com motor 2.0 e tecnologia de
+                                    ponta.</p>
+                                <ul>
+                                    <li>⛽Consumo: 11 km/l (cidade) e 13 km/l (estrada)</li>
+                                    <li>🐎Potência: 150 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 488 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - BYD Song -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <!-- Frente do card -->
+                            <div class="card-front">
+                                <h2 class="user-name">BYD Song</h2>
+                                <img src="/Public/Images/Cars/SONG.png" alt="BYD Song" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>BYD Song</span></li>
+                                        <li>Cor: <span>Branco</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <!-- Verso do card -->
+                            <div class="card-back">
+                                <h2>Detalhes do BYD Song</h2>
+                                <p>SUV elétrico, ideal para quem busca sustentabilidade. Alta autonomia e conforto.</p>
+                                <ul>
+                                    <li>🔋Autonomia: 400 km</li>
+                                    <li>🐎Potência: 245 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 500 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 - Chevrolet Spin -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <!-- Frente do card -->
+                            <div class="card-front">
+                                <h2 class="user-name">Chevrolet Spin</h2>
+                                <img src="/Public/Images/Cars/SPIN.png" alt="Chevrolet Spin" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Chevrolet Spin</span></li>
+                                        <li>Cor: <span>Azul</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <!-- Verso do card -->
+                            <div class="card-back">
+                                <h2>Detalhes do Chevrolet Spin</h2>
+                                <p>Espaçosa e prática, ideal para famílias. Com motor 1.8 e ampla capacidade de bagagem.
+                                </p>
+                                <ul>
+                                    <li>⛽Consumo: 10 km/l (cidade) e 12 km/l (estrada)</li>
+                                    <li>🐎Potência: 106 cv</li>
+                                    <li>💺Capacidade: 7 lugares</li>
+                                    <li>🧳Porta-malas: 710 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -194,8 +292,10 @@
             </div>
         </div>
     </section>
+
+
     <!-- Seção de Contato -->
-    <section class="contact-section">
+    <section class="contact-section" id="contato">
         <h2>Fale Conosco</h2>
         <div class="contact-container">
             <!-- Formulário de contato -->
@@ -229,9 +329,10 @@
             <!-- Outra coluna para contatos adicionais -->
             <div class="contact-info">
                 <h3>Nossos Contatos</h3>
-                <p><strong>E-mail:</strong> contato@empresa.com</p>
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo</p>
+                <p><img src="/Public/Images/svg/instagram.svg" alt="Icone instagram">&nbsp&nbsp @RenovAuto</p>
+                <p><img src="/Public/Images/svg/telephone.svg" alt="Icone de telefone">&nbsp&nbsp (11) 1234-5678</p>
+                <p><img src="/Public/Images/svg/geo-alt-fill.svg" alt="Icone de Localização">&nbsp&nbsp Rua
+                    LaAondeATuaInvejaNaoChega, 123, Fortaleza, CE</p>
             </div>
         </div>
     </section>

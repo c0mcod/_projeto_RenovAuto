@@ -9,6 +9,7 @@
     <!-- CSS DO PLANO DE EMPRESA -->
     <link rel="stylesheet" href="../Planos/CSS/planEnterprise.css">
     <!-- SWIPER -->
+    <link rel="stylesheet" href="/Public/Style/slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/Public/Images/_favicon_renovauto.ico" type="image/x-icon">
@@ -23,18 +24,35 @@
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <nav>
-            <div id="icon">
+        <nav class="nav-bar">
+            <div class="logo">
                 <h1>RenovAuto</h1>
             </div>
-            <div id="group" class="nav-links">
-                <a href="/index.html" class="effect-underline text-reset">Início</a>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a href="#carros">Carros</a></li>
+                    <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+                </ul>
             </div>
-            <button class="hamburger-menu" id="hamburger-menu">
-                &#9776;
-            </button>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/Public/Images/svg/menu_white_36dp.svg"
+                        alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a href="#carros">Carros</a></li>
+                <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+            </ul>
+
+        </div>
     </header>
+
 
     <!-- Seção Hero -->
     <section class="hero-section">
@@ -44,49 +62,224 @@
                 <h2 class="text-plan-E">Buscando os melhores preços e benefícios para os seus funcionários?</h2>
                 <p id="text-plan-E">Confira mais abaixo sobre o nosso plano empresarial e entre contato conosco para
                     adquirir este pacote!</p>
-                <a href="#">
-                    <button type="button" class="hero-plan-btn"><b>Fale conosco!</b></button>
-                </a>
+                <a href="#" class="hero-plan-btn">Fale Conosco!</a>
             </div>
         </div>
     </section>
 
-    <!-- Seção de benefícios -->
-    <!-- Seção de Benefícios -->
-<section class="beneficios services">
-    <h3 class="title-plans">Benefícios do Plano</h3>
-    <div class="services-container">
-        <div class=" box-service service-item">
-            <h4>Pagamento anual</h4>
-            <p>Pagamento realizado apenas uma vez ao ano!</p>
-        </div>
-        <div class="box-service service-item2">
-            <h4>Manutenção</h4>
-            <p>Manutenção preventiva e ajustes a cada 6 meses por nossa conta.</p>
-        </div>
-        <div class="box-service service-item3">
-            <h4>Flexível</h4>
-            <p>Diferentes tamanhos de veículos de acordo com a necessidade da sua empresa.</p>
-        </div>
-    </div>
-</section>
 
+    <!-- Cards de Planos Empresariais -->
+    <section class="plans-cards">
+        <h2>Escolha o Plano Ideal para Sua Empresa</h2>
+        <div class="card-grid">
+            <!-- Plano Empresarial Básico -->
+            <div class="plan-card">
+                <h3>Plano Empresarial Básico</h3>
+                <p>A opção ideal para pequenas empresas que precisam de transporte regular.</p>
+                <ul>
+                    <li>🚗 Quilometragem: 1.000 km</li>
+                    <li>👥 1 motorista adicional</li>
+                    <li>🔒 Seguro básico incluído</li>
+                </ul>
+                <p class="price">R$ 300/dia</p>
+                <button class="btn-details">Ver Detalhes</button>
+            </div>
 
-    <!-- <section class="beneficios services">
-        <h3 class="title-plans">benefícios do plano</h3>
-        <div class="service-item effect-reveal-1">
-            <h4>Pagamento anual</h4>
-            <p>Pagamento realizado apenas uma vez ao ano!</p>
+            <!-- Plano Empresarial Completo -->
+            <div class="plan-card">
+                <h3>Plano Empresarial Completo</h3>
+                <p>Flexibilidade e conforto para grandes empresas com múltiplos funcionários.</p>
+                <ul>
+                    <li>🚗 Quilometragem ilimitada</li>
+                    <li>👥 Motoristas adicionais ilimitados</li>
+                    <li>🔒 Seguro completo incluído</li>
+                    <li>📞 Assistência 24h</li>
+                </ul>
+                <p class="price">R$ 600/dia</p>
+                <button class="btn-details">Ver Detalhes</button>
+            </div>
+
+            <!-- Plano Empresarial Premium -->
+            <div class="plan-card">
+                <h3>Plano Empresarial Premium</h3>
+                <p>O pacote completo para empresas que buscam excelência no transporte.</p>
+                <ul>
+                    <li>🚗 Quilometragem ilimitada</li>
+                    <li>👥 Motoristas adicionais ilimitados</li>
+                    <li>🔒 Seguro premium</li>
+                    <li>📞 Assistência 24h e carro reserva</li>
+                    <li>💼 Atendimento prioritário</li>
+                </ul>
+                <p class="price">R$ 1.000/dia</p>
+                <button class="btn-details">Ver Detalhes</button>
+            </div>
         </div>
-        <div class="service-item effect-reveal-2">
-            <h4>Manutenção</h4>
-            <p>Manutenção preventiva e ajustes a cada 6 meses por nossa conta</p>
+    </section>
+
+    <!-- SLIDER DE CARROS DO PLANO -->
+    <!-- SLIDER -->
+    <section class="products" id="carros">
+        <h3 class="title-plans">Principais veículos inclusos no plano</h3>
+        <div class="container swiper">
+            <div class="slider-wrapper">
+
+                <div class="card-list swiper-wrapper">
+
+                    <!-- Card - Fiat Fiorino -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <!-- Frente do card -->
+                            <div class="card-front">
+                                <h2 class="user-name">Fiat Fiorino</h2>
+                                <img src="/Public/Images/Cars/FIORINO.png" alt="user-image" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Fiat Fiorino</span></li>
+                                        <li>Cor: <span>Branco</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <!-- Verso do card -->
+                            <div class="card-back">
+                                <h2>Detalhes do Fiat Fiorino</h2>
+                                <p>Veículo utilitário com excelente capacidade de carga, ideal para transporte
+                                    urbano de mercadorias.</p>
+                                <ul>
+                                    <li>⛽Consumo: 12 km/l (cidade) e 13 km/l (estrada)</li>
+                                    <li>🐎Potência: 85 cv</li>
+                                    <li>💺Capacidade: 2 lugares</li>
+                                    <li>🧳Capacidade de carga: 650 kg</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Chevrolet S10 -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2 class="user-name">Chevrolet S10</h2>
+                                <img src="/Public/Images/Cars/S10X.png" alt="user-image" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Chevrolet S10</span></li>
+                                        <li>Cor: <span>Preto</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <div class="card-back">
+                                <h2>Detalhes da Chevrolet S10</h2>
+                                <p>Perfeita para terrenos difíceis e aventuras, com tração 4x4 e motor potente.</p>
+                                <ul>
+                                    <li>⛽Consumo: 8 km/l (cidade) e 10 km/l (estrada)</li>
+                                    <li>🐎Potência: 200 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 1061 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Mitsubishi L200 -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2 class="user-name">Mitsubishi L200</h2>
+                                <img src="/Public/Images/Cars/L200.png" alt="user-image" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Mitsubishi L200</span></li>
+                                        <li>Cor: <span>Prata</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <div class="card-back">
+                                <h2>Detalhes da Mitsubishi L200</h2>
+                                <p>Robustez e potência para trabalhos pesados, ideal para uso em áreas rurais.</p>
+                                <ul>
+                                    <li>⛽Consumo: 9 km/l (cidade) e 11 km/l (estrada)</li>
+                                    <li>🐎Potência: 190 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 1000 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Peugeot Partner -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2 class="user-name">Peugeot Partner</h2>
+                                <img src="/Public/Images/Cars/PATN.png" alt="user-image" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Peugeot Partner</span></li>
+                                        <li>Cor: <span>Cinza</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <div class="card-back">
+                                <h2>Detalhes do Peugeot Partner</h2>
+                                <p>Veículo utilitário ideal para entregas, com amplo espaço de carga e conforto para
+                                    o
+                                    motorista.</p>
+                                <ul>
+                                    <li>⛽Consumo: 12 km/l (cidade) e 14 km/l (estrada)</li>
+                                    <li>🐎Potência: 115 cv</li>
+                                    <li>💺Capacidade: 2 lugares</li>
+                                    <li>🧳Capacidade de carga: 750 kg</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 - Toyota Hilux -->
+                    <div class="card-item swiper-slide">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2 class="user-name">Toyota Hilux</h2>
+                                <img src="/Public/Images/Cars/TOYH.png" alt="user-image" class="user-image">
+                                <div class="descrip">
+                                    <ul class="car-descr">
+                                        <li>Modelo: <span>Toyota Hilux</span></li>
+                                        <li>Cor: <span>Branco</span></li>
+                                    </ul>
+                                </div>
+                                <button class="show-details-btn">Mostrar Detalhes</button>
+                            </div>
+                            <div class="card-back">
+                                <h2>Detalhes da Toyota Hilux</h2>
+                                <p>Veículo potente e resistente, excelente para aventuras e uso em terrenos
+                                    acidentados.
+                                </p>
+                                <ul>
+                                    <li>⛽Consumo: 9 km/l (cidade) e 11 km/l (estrada)</li>
+                                    <li>🐎Potência: 204 cv</li>
+                                    <li>💺Capacidade: 5 lugares</li>
+                                    <li>🧳Porta-malas: 1150 L</li>
+                                </ul>
+                                <button class="hide-details-btn">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
         </div>
-        <div class="service-item effect-reveal-3">
-            <h4>Flexível</h4>
-            <p>Diferentes tamanhos de veiculos de acordo com a necessidade da sua empresa</p>
-        </div>
-    </section> -->
+    </section>
 
     <!-- Seção de Contato -->
     <section class="contact-section">
@@ -123,13 +316,13 @@
             <!-- Outra coluna para contatos adicionais -->
             <div class="contact-info">
                 <h3>Nossos Contatos</h3>
-                <p><strong>E-mail:</strong> contato@empresa.com</p>
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo</p>
+                <p><img src="/Public/Images/svg/instagram.svg" alt="Icone instagram">&nbsp&nbsp @RenovAuto</p>
+                <p><img src="/Public/Images/svg/telephone.svg" alt="Icone de telefone">&nbsp&nbsp (11) 1234-5678</p>
+                <p><img src="/Public/Images/svg/geo-alt-fill.svg" alt="Icone de Localização">&nbsp&nbsp Rua
+                    LaAondeATuaInvejaNaoChega, 123, Fortaleza, CE</p>
             </div>
         </div>
     </section>
-
 
 
     <!-- Rodapé -->
@@ -137,6 +330,9 @@
         <p>&copy; 2024 RenovAuto. Todos os direitos reservados.</p>
         <p><a href="#">Política de Privacidade</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/Public/JS/slider.js"></script>
 </body>
 
 </html>

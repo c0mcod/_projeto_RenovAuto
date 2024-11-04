@@ -22,9 +22,10 @@ body {
 
 .title-plans {
     font-size: 2em;
-    margin-bottom: 30px;
     color: #333;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: -30px;
 }
 
 .beneficios,
@@ -34,67 +35,120 @@ body {
     visibility: hidden;
 }
 
-/* Header */
+/* HEADER NAVBAR */
+/* NAV BAR */
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+    background-color: black;
+    box-shadow: 0px 3px 10px #464646;
 }
 
-header h1 {
-    margin-top: 5px;
-    font-size: 15pt;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-nav {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100%;
+.nav-bar {
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem 6rem;
+    margin: 0;
 }
 
-nav .effect-underline {
-    color: white;
-    text-transform: uppercase;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.nav-list {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
     text-decoration: none;
-    letter-spacing: 0.10em;
-    display: inline-block;
-    padding: 8px 20px;
-    position: relative;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-.effect-underline:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+.nav-item a:hover {
+    color: rgb(161, 161, 161);
 }
 
-.effect-underline:hover:after {
-    width: 100%;
-    left: 0;
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
 }
 
-.hamburger-menu {
-    /* Esconder o ícone no desktop */
+.mobile-menu-icon {
     display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
 }
 
-/* SEÇÃO DA HERO */
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        z-index: 1000;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        color: #fff;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
 
 /* SEÇÃO DA HERO */
 .hero-section {
@@ -113,7 +167,6 @@ nav .effect-underline {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    /* Coloca o conteúdo na frente */
 }
 
 .img-plan {
@@ -130,6 +183,7 @@ nav .effect-underline {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -146,20 +200,27 @@ nav .effect-underline {
 }
 
 .hero-plan-btn {
-    padding: 0px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #00c43f;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 30px;
     border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .hero-plan-btn:hover {
-    background-color: #0056b3;
+    background-color: #04832c;
+    color: #fff;
+    cursor: pointer;
 }
 
-/* Media query para resoluções menores */
+/* HERO-PLANO */
 @media (max-width: 768px) {
     .hero-section {
         display: flex;
@@ -180,9 +241,7 @@ nav .effect-underline {
         width: 100%;
         height: 100%;
         background-color: rgba(17, 17, 17, 0.7);
-        /* Cor escura com opacidade */
         z-index: 0;
-        /* Certifica-se de que o overlay fica atrás do conteúdo */
     }
 
     .container-plan-E {
@@ -190,12 +249,10 @@ nav .effect-underline {
         justify-content: center;
         align-items: center;
         z-index: 1;
-        /* Coloca o conteúdo na frente */
     }
 
     .img-plan {
         display: none;
-        /* Esconde a imagem como elemento separado */
     }
 
     #hero-content {
@@ -205,108 +262,94 @@ nav .effect-underline {
     }
 }
 
+
 /* Beneficios */
-
-/* Benefícios */
-.beneficios {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.beneficios h3 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-/* Container flexível para as caixas de serviço */
-.beneficios .services-container {
+.plans-cards .card-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 100%;
+    gap: 1.5em;
+    justify-content: space-around;
 }
 
-/* Estilos para cada caixa de serviço */
-.beneficios .box-service {
-    width: 300px;
-    height: 180px;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.beneficios .box-service h4 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-    color: #111;
-}
-
-.beneficios .box-service p {
-    font-size: 1em;
-    color: #666;
-}
-
-/* Responsivo para telas menores */
-@media (max-width: 768px) {
-    .beneficios h3 {
-        font-size: 1.8em;
-    }
-
-    .beneficios .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .beneficios .box-service {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-}
-
-
-/* .beneficios {
-    padding: 100px;
+.plan-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
     text-align: center;
+    max-width: 300px;
+    /* max-height: 800px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
 }
 
-.beneficios h3 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
+.btn-details {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    transition: transform 0.2s;
+    color: wheat;
 }
 
-.beneficios .service-item {
-    display: inline-block;
-    width: 300px;
-    height: 180px;
-    padding: 20px;
-    border-radius: 6px;
-    margin: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    vertical-align: top;
+.btn-details:hover {
+    background-color: #0056b3;
 }
 
-.beneficios h4 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #111;
+.plan-card:hover {
+    transform: scale(1.05);
 }
 
-.beneficios p {
-    font-size: 1.1em;
-    color: #666;
-} */
+.plans-cards h2 {
+    text-align: center;
+    padding: 40px;
+}
+
+.plan-card h3 {
+    margin-bottom: 20px;
+}
+
+.plan-card li {
+    font-weight: 500;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #2d87f0;
+}
+
+/* SEÇÃO DE PLANOS */
+@media (max-width: 768px) {
+    .plans-cards .card-grid {
+        justify-content: center;
+    }
+
+    .plan-card {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .plans-cards h2 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .plan-card h3 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}
+
 
 /* Contato */
 .contact-section {

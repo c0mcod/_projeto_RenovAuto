@@ -38,21 +38,33 @@
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <nav>
-            <div id="icon">
+        <nav class="nav-bar">
+            <div class="logo">
                 <h1>RenovAuto</h1>
             </div>
-            <div id="group" class="nav-links">
-                <a href="index.html" class="effect-underline text-reset">Início</a>
-                <a href="#servicos" class="effect-underline text-reset">Serviços</a>
-                <a href="#planos" class="effect-underline text-reset">Planos</a>
-                <a href="#carros" class="effect-underline text-reset">Mais procurados</a>
-                <a href="#feedbacks" class="effect-underline text-reset">Feedback</a>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a href="#carros">Carros</a></li>
+                    <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+                </ul>
             </div>
-            <button class="hamburger-menu text-reset" id="hamburger-menu">
-                &#9776;
-            </button>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/Public/Images/svg/menu_white_36dp.svg"
+                        alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a href="#carros">Carros</a></li>
+                <li class="nav-item"><a href="#feedbacks">Feedback</a></li>
+            </ul>
+
+        </div>
     </header>
 
     <!-- SEÇÃO PRINCIPAL(HERO) -->

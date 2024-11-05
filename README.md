@@ -34,3 +34,9 @@ Contribuições são bem-vindas! Abra uma issue para sugestões ou envie um pull
 
 ## Licença
 Projeto de uso acadêmico, sem licença específica.
+
+## Integrantes do Grupo
+- [Antônio Carlos] - Desenvolvimento
+- [Daniel Sampaio] - Designer e planejamento
+- [Edson Kayque] - Designer e planejamento
+- [Thomas Rubens] - Designer e planejamento

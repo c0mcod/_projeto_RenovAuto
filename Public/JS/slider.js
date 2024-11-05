@@ -44,7 +44,7 @@ swiper = new Swiper('.swiper-container', {
     speed: 600,  // Tempo de transição em milissegundos
     effect: 'slide',  // Tipo de animação ('fade' para um efeito de desaparecimento suave)
     grabCursor: true,
-    
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

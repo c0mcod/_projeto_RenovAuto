@@ -1,3 +1,4 @@
+// JS SWIPER
 const swiper1 = new Swiper('.slider-wrapper', {
     loop: true,
     grabCursor: true,
@@ -36,7 +37,7 @@ hideDetailButtons.forEach((button) => {
         card.classList.remove('flipped');
     });
 });
-
+ 
 swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,

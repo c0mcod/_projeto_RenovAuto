@@ -93,7 +93,7 @@ revelar.reveal('.service-item2',
         delay: 800,
         origin: "bottom",
     })
-
+ 
 revelar.reveal('.service-item3',
     {
         duration: 1000,
@@ -101,7 +101,7 @@ revelar.reveal('.service-item3',
         delay: 1200,
         origin: "bottom",
     })
-
+ 
 revelar.reveal('.plans-title',
     {
         duration: 1000,
